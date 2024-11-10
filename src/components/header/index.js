@@ -1,51 +1,27 @@
 import Image from "next/image";
 import Link from "next/link";
-import { faMapMarkerAlt, faClock, faHeadset } from "@fortawesome/free-solid-svg-icons";
-import { faTwitter, faFacebookSquare, faPinterestP, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = () => {
   return (
     <header class="main-header header-style-one">
-		
+	
 		<div class="header-top">
 			<div class="auto-container">
 				<div class="inner-container">
 					<div class="top-left">
-			
+						
 						<ul class="list-style-one">
-							<li>
-                <FontAwesomeIcon icon={faMapMarkerAlt} />1901 Thornridge Cir. Shiloh, Hawaii 81063</li>
-                <li>
-                <FontAwesomeIcon icon={faClock} /> Mon - Fri: 09.00am - 10.00 pm
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faHeadset} /> Call us : Call us : <a href="tel:12345678910">123-456-78910</a></li>
-                    </ul>
+							<li><i class="fa fa-map-marker-alt"></i> 1901 Thornridge Cir. Shiloh, Hawaii 81063</li>
+							<li><i class="far fa-clock"></i> Mon - Fri: 09.00am - 10.00 pm</li>
+							<li><i class="fa fa-headset"></i>Call us : <a href="tel:12345678910">123-456-78910</a></li>
+						</ul>
 					</div>
 					<div class="top-right">
 						<ul class="social-icon-one">
-           
-              <li>
-                <a href="#" aria-label="Twitter">
-                  <FontAwesomeIcon icon={faTwitter} />
-                </a>
-              </li>
-              <li>
-                <a href="#" aria-label="Facebook">
-                  <FontAwesomeIcon icon={faFacebookSquare} />
-                </a>
-              </li>
-              <li>
-                <a href="#" aria-label="Pinterest">
-                  <FontAwesomeIcon icon={faPinterestP} />
-                </a>
-              </li>
-              <li>
-                <a href="#" aria-label="Instagram">
-                  <FontAwesomeIcon icon={faInstagram} />
-                </a>
-              </li>
+							<li><a href="#"><span class="fab fa-twitter"></span></a></li>
+							<li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+							<li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
+							<li><a href="#"><span class="fab fa-instagram"></span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -55,24 +31,13 @@ const Header = () => {
 		  
 		<div class="header-lower">
 			<div class="auto-container">
-
+			
 				<div class="main-box">
 					<div class="logo-box">
-          <div className="logo">
-          <Link href="/" className="logo-link">
-            <Image 
-              src="/images/logo-2.png" 
-              alt="Tronis" 
-              title="Tronis" 
-              width={120} 
-              height={50} 
-              priority
-            />
-          </Link>
-        </div>
-        </div>
+						<div class="logo"><a href="index.html"><img src="images/logo-2.png" alt="" title="Tronis"/></a></div>
+					</div>
 
-					
+	
 					<div class="nav-outer">    
 						<nav class="nav main-menu">
 							<ul class="navigation">
@@ -126,7 +91,7 @@ const Header = () => {
 								</li>
 							</ul>
 						</nav>
-				
+						
 						
 						<div class="outer-box">
 							<span class="divider"></span>
@@ -136,12 +101,12 @@ const Header = () => {
 								<span class="count">0</span>
 							</a>
 							
-				
+					
 							<button class="ui-btn mx-0 search-btn">
 								<i class="icon lnr lnr-icon-search"></i>
 							</button>
 							
-						
+							
 							<div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
 						</div>
 					</div>
@@ -150,25 +115,14 @@ const Header = () => {
 			</div>
 		</div>
 
-		
+	
 		<div class="mobile-menu">
 			<div class="menu-backdrop"></div>
 		
-			
+		
 			<nav class="menu-box">
 				<div class="upper-box">
-            <div className="nav-logo">
-          <Link href="/" className="logo-link">
-            <Image 
-              src="/images/logo-2.png" 
-              alt="Tronis" 
-              title="Tronis" 
-              width={120} 
-              height={50} 
-              priority
-            />
-          </Link>
-        </div>
+					<div class="nav-logo"><a href="index.html"><img src="images/logo.png" alt=""/></a></div>
 					<div class="close-btn"><i class="icon fa fa-times"></i></div>
 				</div>
 		
@@ -185,7 +139,7 @@ const Header = () => {
 						</div>
 					</li>
 					<li>
-					
+						
 						<div class="contact-info-box">
 							<span class="icon lnr-icon-envelope1"></span>
 							<span class="title">Send Email</span>
@@ -193,7 +147,7 @@ const Header = () => {
 						</div>
 					</li>
 					<li>
-					
+						
 						<div class="contact-info-box">
 							<span class="icon lnr-icon-clock"></span>
 							<span class="title">Send Email</span>
@@ -210,9 +164,8 @@ const Header = () => {
 					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
 				</ul>
 			</nav>
-		
+		</div>
 
-		
 		<div class="search-popup">
 			<span class="search-back-drop"></span>
 			<button class="close-search"><span class="fa fa-times"></span></button>
@@ -226,33 +179,24 @@ const Header = () => {
 				</form>
 			</div>
 		</div>
-	
 
 
+		
 		<div class="sticky-header">
 			<div class="auto-container">
 				<div class="inner-container">
-					
-        <div className="logo">
-          <Link href="/" className="logo-link">
-            <Image 
-              src="/images/logo-2.png" 
-              alt="Tronis" 
-              title="Tronis" 
-              width={120} 
-              height={50} 
-              priority
-            />
-          </Link>
-        </div>
+				
+					<div class="logo">
+						<a href="index.html"><img src="images/logo-2.png" alt=""/></a>
+					</div>
 		
 					
 					<div class="nav-outer">
-				
+					
 						<nav class="main-menu">
 							<div class="navbar-collapse show collapse clearfix">
 								<ul class="navigation clearfix">
-								
+									
 								</ul>
 							</div>
 						</nav>
@@ -263,7 +207,6 @@ const Header = () => {
 				</div>
 			</div>
 		</div>
-    </div>
 	</header>
   );
 };

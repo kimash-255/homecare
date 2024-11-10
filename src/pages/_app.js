@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
 import { useRouter } from "next/router";
-import { Suspense, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
@@ -13,9 +13,17 @@ import Head from "next/head";
 config.autoAddCss = false;
 
 // Add icons to the library
-library.add( fas, far, fab);
+library.add(fas, far, fab);
 
 export default function App({ Component, pageProps }) {
+  // Set up a state to track whether the app is hydrated (running on the client)
+  const [isHydrated, setIsHydrated] = useState(false);
+
+  useEffect(() => {
+    // Set isHydrated to true after the component has mounted
+    setIsHydrated(true);
+  }, []);
+
   return (
     <>
       <Head>
@@ -25,7 +33,12 @@ export default function App({ Component, pageProps }) {
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
         />
       </Head>
-      <Component {...pageProps} />
+      {/* Render the content only once the app is hydrated */}
+      {isHydrated ? (
+        <Component {...pageProps} />
+      ) : (
+        <div>Loading...</div>
+      )}
     </>
   );
 }
