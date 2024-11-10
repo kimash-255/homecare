@@ -41,20 +41,20 @@ const Header = () => {
 					<div class="nav-outer">    
 						<nav class="nav main-menu">
 							<ul class="navigation">
-								<li class="current dropdown"><a href="index.html">Home</a>
+								<li class="current dropdown"><a href="">Home</a>
 									<ul>
-										<li><a href="index.html">Home page 01</a></li>
-										<li><a href="index-2.html">Home page 02</a></li>
+										<li><a href="">Home page </a></li>
+										
 									</ul>
 								</li>
 								<li class="dropdown"><a href="#">Pages</a>
 									<ul>
-										<li><a href="page-about.html">About</a></li>
-										<li><a href="page-contact.html">Contact</a></li>
+										<li><a href="about">About</a></li>
+										<li><a href="contact">Contact</a></li>
 										<li class="dropdown"><a href="#">Team</a>
 											<ul>
-												<li><a href="page-team.html">Team Grid</a></li>
-												<li><a href="page-team-details.html">Team Details</a></li>
+												<li><a href="about">Team Grid</a></li>
+												<li><a href="about">Team Details</a></li>
 											</ul>
 										</li>
 										<li class="dropdown"><a href="#">Shop</a>
@@ -66,27 +66,27 @@ const Header = () => {
 												<li><a href="shop-checkout.html">Checkout</a></li>
 											</ul>
 										</li>
-										<li><a href="page-testimonial.html">Testimonial</a></li>
-										<li><a href="page-faq.html">Faq</a></li>
+										<li><a href="services">Testimonial</a></li>
+										<li><a href="contact">Faq</a></li>
 										<li><a href="page-404.html">404</a></li>
 									</ul>
 								</li>
 								<li class="dropdown"><a href="#">Services</a>
 									<ul>
-										<li><a href="page-services.html">Services</a></li>
-										<li><a href="page-service-details.html">Services Details</a></li>
+										<li><a href="services">Services</a></li>
+										<li><a href="services">Services Details</a></li>
 									</ul>
 								</li>
 								<li class="dropdown"><a href="#">Cases</a>
 									<ul>
-										<li><a href="page-cases.html">Case Grid</a></li>
-										<li><a href="page-case-details.html">Case Details</a></li>
+										<li><a href="">Case Grid</a></li>
+										<li><a href="">Case Details</a></li>
 									</ul>
 								</li>
 								<li class="dropdown"><a href="#">Blog</a>
 									<ul>
-										<li><a href="news-grid.html">News Grid</a></li>
-										<li><a href="news-details.html">News Details</a></li>
+										<li><a href="blog">News Grid</a></li>
+										<li><a href="blog">News Details</a></li>
 									</ul>
 								</li>
 							</ul>

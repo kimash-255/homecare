@@ -53,7 +53,7 @@ const Footer = () => {
 					
 					<div class="contact-info col-lg-2">
 						<div class="inner">
-							<a href="page-contact.html" class="theme-btn btn-style-three"><span>Contact Us</span></a>
+							<a href="contact" class="theme-btn btn-style-three"><span>Contact Us</span></a>
 						</div>
 					</div>
 				</div>

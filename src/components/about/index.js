@@ -47,7 +47,7 @@ const About = () => {
                     </div>
 
                     <div class="btn-box">
-                        <a href="page-about.html" class="theme-btn btn-style-three"><span class="btn-title">Discover More <i class="fa fa-arrow-right"></i></span></a>
+                        <a href="about" class="theme-btn btn-style-three"><span class="btn-title">Discover More <i class="fa fa-arrow-right"></i></span></a>
                      
                         <a href="tel:+01750050088" class="info-btn">
                             <i class="icon fa fa-phone"></i>

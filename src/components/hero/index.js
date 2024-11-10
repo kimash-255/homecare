@@ -20,7 +20,7 @@ const Hero = () => {
                 All time support from a specialist carer who moves into the home
               </div>
               <div className="btn-box wow fadeInUp" data-wow-delay="500ms">
-                <Link href="/page-about">
+                <Link href="/about">
                   <div className="theme-btn btn-style-one">
                     <span className="btn-title">Learn More</span>
                   </div>
