@@ -21,8 +21,8 @@ const Home = () => {
       <FunFact />
       <Testimonials />
       <CallToAction />
-      <BlogNews />
-      <Clients />
+      {/* <BlogNews /> */}
+      {/* <Clients /> */}
       {/* <Contact/> */}
       {/* Other homepage content */}
     </Layout>

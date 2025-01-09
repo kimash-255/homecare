@@ -3,46 +3,43 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header class="main-header header-style-one">
-      <div class="header-top">
-        <div class="auto-container">
-          <div class="inner-container">
-            <div class="top-left">
-              <ul class="list-style-one">
+    <header className="main-header header-style-one">
+      <div className="header-top">
+        <div className="auto-container">
+          <div className="inner-container">
+            <div className="top-left">
+              <ul className="list-style-one">
                 <li>
-                  <i class="fa fa-map-marker-alt"></i> 1901 Thornridge Cir.
-                  Shiloh, Hawaii 81063
+                  <i className="fa fa-map-marker-alt"></i> 415 NE 108th Ave,
+                  Portland, Oregon, ZIP 97220
                 </li>
                 <li>
-                  <i class="far fa-clock"></i> Mon - Fri: 09.00am - 10.00 pm
-                </li>
-                <li>
-                  <i class="fa fa-headset"></i>Call us :{" "}
-                  <Link href="tel:12345678910">123-456-78910</Link>
+                  <i className="fa fa-headset"></i> Call us :{" "}
+                  <Link href="tel:12345678910">205-960-8084</Link>
                 </li>
               </ul>
             </div>
-            <div class="top-right">
-              <ul class="social-icon-one">
+            <div className="top-right">
+              <ul className="social-icon-one">
                 <li>
                   <Link href="#">
-                    <span class="fab fa-twitter"></span>
+                    <span className="fab fa-twitter"></span>
                   </Link>
                 </li>
                 <li>
                   <Link href="#">
-                    <span class="fab fa-facebook-square"></span>
+                    <span className="fab fa-facebook-square"></span>
                   </Link>
                 </li>
                 <li>
-                  <a href="#">
-                    <span class="fab fa-pinterest-p"></span>
-                  </a>
+                  <Link href="#">
+                    <span className="fab fa-pinterest-p"></span>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
-                    <span class="fab fa-instagram"></span>
-                  </a>
+                  <Link href="#">
+                    <span className="fab fa-instagram"></span>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -50,79 +47,80 @@ const Header = () => {
         </div>
       </div>
 
-      <div class="header-lower">
-        <div class="auto-container">
-          <div class="main-box">
-            <div class="logo-box">
-              <div class="logo">
-                <a href="index.html">
-                  <img src="images/logo-2.png" alt="" title="Tronis" />
-                </a>
+      <div className="header-lower">
+        <div className="auto-container">
+          <div className="main-box">
+            <div className="logo-box">
+              <div className="logo">
+                <Link href="/">
+                  <Image
+                    src="/images/logo-2.png"
+                    alt="Tronis"
+                    width={200}
+                    height={60}
+                  />
+                </Link>
               </div>
             </div>
 
-            <div class="nav-outer">
-              <nav class="nav main-menu">
-                <ul class="navigation">
-                  <li class="current dropdown">
-                    <a href="">Home</a>
+            <div className="nav-outer">
+              <nav className="nav main-menu">
+                <ul className="navigation">
+                  <li className="current">
+                    <Link href="/" style={{ paddingLeft: "150px" }}>
+                      Home
+                    </Link>
+                  </li>
+
+                  <li className="dropdown">
+                    <Link href="/about">About</Link>
+                  </li>
+
+                  <li className="dropdown">
+                    <Link href="#">Services</Link>
                     <ul>
                       <li>
-                        <a href="">Home page </a>
+                        <Link href="/services">Services</Link>
+                      </li>
+                      <li>
+                        <Link href="/services">Services Details</Link>
                       </li>
                     </ul>
                   </li>
 
-                  <li class="dropdown">
-                    <a href="#">Services</a>
+                  <li className="dropdown">
+                    <Link href="#">Blog</Link>
                     <ul>
                       <li>
-                        <a href="services">Services</a>
+                        <Link href="/blog">News Grid</Link>
                       </li>
                       <li>
-                        <a href="services">Services Details</a>
+                        <Link href="/blog">News Details</Link>
                       </li>
                     </ul>
                   </li>
-                  <li class="dropdown">
-                    <a href="#">Cases</a>
-                    <ul>
-                      <li>
-                        <a href="">Case Grid</a>
-                      </li>
-                      <li>
-                        <a href="">Case Details</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a href="#">Blog</a>
-                    <ul>
-                      <li>
-                        <a href="blog">News Grid</a>
-                      </li>
-                      <li>
-                        <a href="blog">News Details</a>
-                      </li>
-                    </ul>
+
+                  <li>
+                    <div
+                      className="contact-info col-lg-2"
+                      style={{ paddingLeft: "150px" }}
+                    >
+                      <div className="inner">
+                        <Link
+                          href="contact"
+                          className="theme-btn btn-style-three"
+                        >
+                          <span>Contact Us</span>
+                        </Link>
+                      </div>
+                    </div>
                   </li>
                 </ul>
               </nav>
 
-              <div class="outer-box">
-                <span class="divider"></span>
-
-                <a href="#" class="ui-btn cart-btn">
-                  <i class="icon lnr lnr-icon-cart"></i>
-                  <span class="count">0</span>
-                </a>
-
-                <button class="ui-btn mx-0 search-btn">
-                  <i class="icon lnr lnr-icon-search"></i>
-                </button>
-
-                <div class="mobile-nav-toggler">
-                  <span class="icon lnr-icon-bars"></span>
+              <div className="outer-box">
+                <div className="mobile-nav-toggler">
+                  <span className="icon lnr-icon-bars"></span>
                 </div>
               </div>
             </div>
@@ -130,124 +128,60 @@ const Header = () => {
         </div>
       </div>
 
-      <div class="mobile-menu">
-        <div class="menu-backdrop"></div>
-
-        <nav class="menu-box">
-          <div class="upper-box">
-            <div class="nav-logo">
-              <a href="index.html">
-                <img src="images/logo.png" alt="" />
-              </a>
+      <div className="mobile-menu">
+        <div className="menu-backdrop"></div>
+        <nav className="menu-box">
+          <div className="upper-box">
+            <div className="nav-logo">
+              <Link href="/">
+                <img src="/images/logo.png" alt="" />
+              </Link>
             </div>
-            <div class="close-btn">
-              <i class="icon fa fa-times"></i>
+            <div className="close-btn">
+              <i className="icon fa fa-times"></i>
             </div>
           </div>
-
-          <ul class="navigation clearfix"></ul>
-          <ul class="contact-list-one">
-            <li>
-              <div class="contact-info-box">
-                <i class="icon lnr-icon-phone-handset"></i>
-                <span class="title">Call Now</span>
-                <a href="tel:+92880098670">+92 (8800) - 98670</a>
+          <ul className="navigation clearfix">
+            <li style={{ paddingLeft: "150px" }}>
+              <Link href="/">Home</Link>
+            </li>
+            <li className="dropdown" style={{ paddingLeft: "150px" }}>
+              <Link href="/about">About</Link>
+            </li>
+            <li className="dropdown">
+              <Link href="#">Services</Link>
+              <ul>
+                <li>
+                  <Link href="/services">Services</Link>
+                </li>
+                <li>
+                  <Link href="/services">Services Details</Link>
+                </li>
+              </ul>
+            </li>
+            <li className="dropdown">
+              <Link href="#">Blog</Link>
+              <ul>
+                <li>
+                  <Link href="/blog">News Grid</Link>
+                </li>
+                <li>
+                  <Link href="/blog">News Details</Link>
+                </li>
+              </ul>
+            </li>
+            <div
+              className="contact-info col-lg-2"
+              style={{ paddingLeft: "150px" }}
+            >
+              <div className="inner">
+                <Link href="contact" className="theme-btn btn-style-three">
+                  <span>Contact Us</span>
+                </Link>
               </div>
-            </li>
-            <li>
-              <div class="contact-info-box">
-                <span class="icon lnr-icon-envelope1"></span>
-                <span class="title">Send Email</span>
-                <a href="/cdn-cgi/l/email-protection#0b636e677b4b6864667b6a657225686466">
-                  <span
-                    class="__cf_email__"
-                    data-cfemail="6d0508011d2d0e02001d0c0314430e0200"
-                  >
-                    [email&#160;protected]
-                  </span>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div class="contact-info-box">
-                <span class="icon lnr-icon-clock"></span>
-                <span class="title">Send Email</span>
-                Mon - Sat 8:00 - 6:30, Sunday - CLOSED
-              </div>
-            </li>
-          </ul>
-
-          <ul class="social-links">
-            <li>
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fab fa-pinterest"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
+            </div>
           </ul>
         </nav>
-      </div>
-
-      <div class="search-popup">
-        <span class="search-back-drop"></span>
-        <button class="close-search">
-          <span class="fa fa-times"></span>
-        </button>
-
-        <div class="search-inner">
-          <form method="post" action="index.html">
-            <div class="form-group">
-              <input
-                type="search"
-                name="search-field"
-                value=""
-                placeholder="Search..."
-                required=""
-              />
-              <button type="submit">
-                <i class="fa fa-search"></i>
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-
-      <div class="sticky-header">
-        <div class="auto-container">
-          <div class="inner-container">
-            <div class="logo">
-              <a href="index.html">
-                <img src="images/logo-2.png" alt="" />
-              </a>
-            </div>
-
-            <div class="nav-outer">
-              <nav class="main-menu">
-                <div class="navbar-collapse show collapse clearfix">
-                  <ul class="navigation clearfix"></ul>
-                </div>
-              </nav>
-
-              <div class="mobile-nav-toggler">
-                <span class="icon lnr-icon-bars"></span>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </header>
   );
