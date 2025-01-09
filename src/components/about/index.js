@@ -95,7 +95,7 @@ const About = () => {
               </figure>
               <div class="exp-box">
                 <div class="inner">
-                  <h6 class="title">Best elderly care for your family</h6>
+                  <h6 class="title">Best care for your loved one</h6>
                 </div>
               </div>
             </div>
