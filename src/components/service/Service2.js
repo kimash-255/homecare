@@ -75,9 +75,7 @@ const Service2 = () => {
               </div>
               <div className="exp-box bounce-y">
                 <div className="inner">
-                  <h4 className="title">
-                    We Take Care Helping Seniors Learn New Hobbies
-                  </h4>
+                  <h4 className="title">We Help Learn New Hobbies</h4>
                 </div>
               </div>
             </div>
