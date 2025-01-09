@@ -33,8 +33,8 @@ export default function App({ Component, pageProps }) {
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
         />
       </Head>
-      {/* Render the content only once the app is hydrated */}
-      {isHydrated ? <Component {...pageProps} /> : <div>Loading</div>}
+      {/* Render content directly, avoid showing a loader */}
+      {isHydrated ? <Component {...pageProps} /> : null}
     </>
   );
 }
