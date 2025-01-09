@@ -5,19 +5,22 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <section className="banner-section-one">
-      <div className="bg" style={{ backgroundImage: "url(./images/banner/bg-1.png)" }}></div>
+      <div
+        className="bg"
+        style={{ backgroundImage: "url(./images/banner/bg-1.png)" }}
+      ></div>
       <div className="auto-container">
         <div className="row align-items-center">
           <div className="content-columnn col-lg-5">
             <div className="content-box">
               <span className="sub-title wow fadeInUp" data-wow-delay="200ms">
-                Welcome to Oldcare Center
+                 Welcome to Dream Care Homes LLC.
               </span>
-              <h1 >
-                We Are Committed to Quality Care
-              </h1>
+              <h1>We Are Committed to Quality Care</h1>
               <div className="text wow fadeInUp" data-wow-delay="400ms">
-                All time support from a specialist carer who moves into the home
+                A community of trained caregivers dedicated to provide a
+                supportive, inclusive, and empowering community that fosters
+                growth and independence.
               </div>
               <div className="btn-box wow fadeInUp" data-wow-delay="500ms">
                 <Link href="/about">

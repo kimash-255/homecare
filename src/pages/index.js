@@ -14,19 +14,17 @@ import Contact from "@/components/contactus";
 const Home = () => {
   return (
     <Layout>
-      
-      <Hero/>
-      <About/>
-      <Marquee/>
-      <Service/>
-      <FunFact/>
-      <Testimonials/>
-      <CallToAction/>
-      <BlogNews/>
-      <Clients/>
-      <Contact/>
-        {/* Other homepage content */}
-    
+      <Hero />
+      <About />
+      <Marquee />
+      <Service />
+      <FunFact />
+      <Testimonials />
+      <CallToAction />
+      <BlogNews />
+      <Clients />
+      {/* <Contact/> */}
+      {/* Other homepage content */}
     </Layout>
   );
 };

@@ -34,11 +34,7 @@ export default function App({ Component, pageProps }) {
         />
       </Head>
       {/* Render the content only once the app is hydrated */}
-      {isHydrated ? (
-        <Component {...pageProps} />
-      ) : (
-        <div>Loading...</div>
-      )}
+      {isHydrated ? <Component {...pageProps} /> : <div>Loading</div>}
     </>
   );
 }
