@@ -83,7 +83,7 @@ const Header = () => {
             <div className="logo-box" style={{ paddingRight: "20px" }}>
               <div className="logo">
                 <Link href="/">
-                  <strong style={{ fontSize: "30px", color: "#000" }}>
+                  <strong style={{ fontSize: "20px", color: "#000" }}>
                     Dream Care Homes
                   </strong>
                 </Link>
@@ -134,7 +134,7 @@ const Header = () => {
                         href="contact"
                         className="theme-btn btn-style-three"
                       >
-                        <span>Contact Us</span>
+                        <span> Get in Touch</span>
                       </Link>
                     </div>
                   </div>
@@ -143,8 +143,6 @@ const Header = () => {
 
               <div className="outer-box">
                 <span className="divider"></span>
-
-                {/* Removed Cart and Search */}
 
                 <div className="mobile-nav-toggler">
                   <span className="icon lnr-icon-bars"></span>

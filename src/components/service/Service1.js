@@ -140,7 +140,7 @@ const Service1 = () => {
                 href="page-contact.html"
                 className="theme-btn btn-style-one small"
               >
-                <span className="btn-title">Contact Now</span>
+                <span className="btn-title">Get in Touch</span>
               </a>
             </div>
           </div>

@@ -12,7 +12,7 @@ const Contact =() => {
 					
 						<div class="contact-form-home1 wow fadeInLeft">
 							<div class="sec-title">
-								<span class="sub-title">Contact Now</span>
+								<span class="sub-title">Get in Touch</span>
 								<h2>Get in touch with us</h2>
 							</div>
 							
