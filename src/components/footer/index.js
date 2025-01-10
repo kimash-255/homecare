@@ -12,7 +12,10 @@ const Footer = () => {
             <div class="footer-logo col-xl-3 col-lg-2">
               <div class="inner">
                 <div class="logo">
-                  <img src="images/logo.png" alt="" />
+                  {/* Commented out the logo image and added text */}
+                  <a href="index.html" class="logo-text">
+                    Dream Care Homes
+                  </a>
                 </div>
               </div>
             </div>
@@ -126,38 +129,38 @@ const Footer = () => {
                   <ul class="user-links">
                     <li>
                       <Link href="#">
-                        <i class="arrow-icon far fa-window-minimize"></i>{" "}
-                        Support Groups
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i class="arrow-icon far fa-window-minimize"></i> Family
-                        Counseling
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i class="arrow-icon far fa-window-minimize"></i> Crisis
-                        Intervention
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i class="arrow-icon far fa-window-minimize"></i> Home
-                        Care
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i class="arrow-icon far fa-window-minimize"></i> Job
-                        Training
+                        <i class="arrow-icon far fa-window-minimize"></i> Safe
+                        Transportation
                       </Link>
                     </li>
                     <li>
                       <Link href="#">
                         <i class="arrow-icon far fa-window-minimize"></i>{" "}
-                        Nutrition Plans
+                        Respite Care
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="#">
+                        <i class="arrow-icon far fa-window-minimize"></i> 24/7
+                        Support
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="#">
+                        <i class="arrow-icon far fa-window-minimize"></i>{" "}
+                        Support Planning
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="#">
+                        <i class="arrow-icon far fa-window-minimize"></i>{" "}
+                        Medical Support
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="#">
+                        <i class="arrow-icon far fa-window-minimize"></i>{" "}
+                        Vocational Training
                       </Link>
                     </li>
                   </ul>
@@ -172,37 +175,20 @@ const Footer = () => {
                   <ul class="user-links">
                     <li>
                       <Link href="#">
-                        <i class="arrow-icon far fa-window-minimize"></i> Meet
-                        Our Team
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
                         <i class="arrow-icon far fa-window-minimize"></i> About
                         Us
                       </Link>
                     </li>
                     <li>
                       <Link href="#">
-                        <i class="arrow-icon far fa-window-minimize"></i> Our
+                        <i class="arrow-icon far fa-window-minimize"></i>{" "}
                         Services
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i class="arrow-icon far fa-window-minimize"></i> New
-                        Projects
                       </Link>
                     </li>
                     <li>
                       <Link href="#">
                         <i class="arrow-icon far fa-window-minimize"></i> Latest
                         News
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i class="arrow-icon far fa-window-minimize"></i> FAQ’s
                       </Link>
                     </li>
                   </ul>
@@ -260,7 +246,7 @@ const Footer = () => {
                       </div>
                       <h6 class="post-title">
                         <Link href="#">
-                          Exploring your In home care support options
+                          Exploring your In-home Care Support Options
                         </Link>
                       </h6>
                     </div>
@@ -276,7 +262,7 @@ const Footer = () => {
         <div class="auto-container">
           <div class="inner-container">
             <div class="copyright-text">
-              © Copyright 2024 by Softleeklimited
+              © Copyright 2024 by Dream Care Homes LLC
             </div>
           </div>
         </div>

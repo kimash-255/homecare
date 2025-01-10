@@ -83,7 +83,9 @@ const Header = () => {
             <div className="logo-box" style={{ paddingRight: "20px" }}>
               <div className="logo">
                 <Link href="/">
-                  <img src="images/logo-2.png" alt="" title="Tronis" />
+                  <strong style={{ fontSize: "30px", color: "#000" }}>
+                    Dream Care Homes
+                  </strong>
                 </Link>
               </div>
             </div>
@@ -161,7 +163,10 @@ const Header = () => {
               {/* Logo */}
               <div className="logo">
                 <Link href="/">
-                  <img src="images/logo-2.png" alt="Tronis" />
+                  {/* Commented out the logo image and added text instead */}
+                  <strong style={{ fontSize: "30px", color: "#000" }}>
+                    Dream Care Homes
+                  </strong>
                 </Link>
               </div>
 
@@ -192,7 +197,10 @@ const Header = () => {
           <div className="upper-box">
             <div className="nav-logo">
               <Link href="/">
-                <img src="images/logo.png" alt="Tronis" />
+                {/* Commented out the logo image and added text instead */}
+                <strong style={{ fontSize: "30px", color: "#000" }}>
+                  Dream Care Homes
+                </strong>
               </Link>
             </div>
             <div className="close-btn">
