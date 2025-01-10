@@ -4,9 +4,12 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-
         {/* Favicon */}
-        <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+        <link
+          rel="shortcut icon"
+          href="/images/favicon.png"
+          type="image/x-icon"
+        />
         <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
 
         {/* Bootstrap CSS */}
@@ -27,7 +30,7 @@ export default function Document() {
           href="/plugins/revolution/css/navigation.css"
           rel="stylesheet"
           type="text/css"
-        />S
+        />
         {/* Custom Style CSS */}
         <link href="/css/style.css" rel="stylesheet" />
 

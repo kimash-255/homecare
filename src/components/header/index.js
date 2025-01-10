@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -13,8 +14,25 @@ const Header = () => {
     setIsMobileMenuOpen(false);
   };
 
+  // Sticky Header Logic
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <header className="main-header header-style-one">
+      {/* Header Top */}
       <div className="header-top">
         <div className="auto-container">
           <div className="inner-container">
@@ -25,126 +43,108 @@ const Header = () => {
                   Portland, Oregon, ZIP 97220
                 </li>
                 <li>
-                  <i className="fa fa-headset"></i> Call us :{" "}
-                  <Link href="tel:12345678910">205-960-8084</Link>
+                  <i className="fa fa-headset"></i> Call us:{" "}
+                  <a href="tel:+12059608084">+1-205-960-8084</a>
                 </li>
               </ul>
             </div>
             <div className="top-right">
               <ul className="social-icon-one">
                 <li>
-                  <Link href="#">
+                  <a href="#">
                     <span className="fab fa-twitter"></span>
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link href="#">
+                  <a href="#">
                     <span className="fab fa-facebook-square"></span>
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link href="#">
+                  <a href="#">
                     <span className="fab fa-pinterest-p"></span>
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link href="#">
+                  <a href="#">
                     <span className="fab fa-instagram"></span>
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+      {/* Header Top */}
 
       <div className="header-lower">
         <div className="auto-container">
           <div className="main-box">
-            <div className="logo-box">
+            <div className="logo-box" style={{ paddingRight: "20px" }}>
               <div className="logo">
                 <Link href="/">
-                  <Image
-                    src="/images/logo-2.png"
-                    alt="Tronis"
-                    width={200}
-                    height={60}
-                  />
+                  <img src="images/logo-2.png" alt="" title="Tronis" />
                 </Link>
               </div>
             </div>
 
+            {/* Nav Box */}
             <div className="nav-outer">
               <nav className="nav main-menu">
-                <ul className="navigation">
-                  <li className="current">
-                    <Link href="/" style={{ paddingLeft: "150px" }}>
-                      Home
-                    </Link>
+                <ul className="navigation" style={{ paddingRight: "20px" }}>
+                  <li className="current dropdown">
+                    <Link href="/">Home</Link>
                   </li>
-
                   <li className="dropdown">
                     <Link href="/about">About</Link>
                   </li>
-
                   <li className="dropdown">
-                    <Link href="#">Services</Link>
+                    <Link href="/services">Services</Link>
                     <ul>
                       <li>
-                        <Link href="/services" onClick={closeMobileMenu}>
-                          Services
-                        </Link>
+                        <Link href="/services">Services</Link>
                       </li>
                       <li>
-                        <Link href="/services" onClick={closeMobileMenu}>
-                          Services Details
-                        </Link>
+                        <Link href="/services/1">Services Details</Link>
                       </li>
                     </ul>
                   </li>
-
                   <li className="dropdown">
-                    <Link href="#">Blog</Link>
+                    <Link href="/blog">Blog</Link>
                     <ul>
                       <li>
-                        <Link href="/blog" onClick={closeMobileMenu}>
-                          News Grid
-                        </Link>
+                        <Link href="/blog">News Grid</Link>
                       </li>
                       <li>
-                        <Link href="/blog" onClick={closeMobileMenu}>
-                          News Details
-                        </Link>
+                        <Link href="/blog/1">News Details</Link>
                       </li>
                     </ul>
-                  </li>
-
-                  <li>
-                    <div
-                      className="contact-info col-lg-2"
-                      style={{ paddingLeft: "150px" }}
-                    >
-                      <div className="inner">
-                        <Link
-                          href="contact"
-                          className="theme-btn btn-style-three"
-                          onClick={closeMobileMenu}
-                        >
-                          <span>Contact Us</span>
-                        </Link>
-                      </div>
-                    </div>
                   </li>
                 </ul>
+
+                <li>
+                  <div
+                    className="contact-info col-lg-2"
+                    style={{ paddingLeft: "250px" }}
+                  >
+                    <div className="inner">
+                      <Link
+                        href="contact"
+                        className="theme-btn btn-style-three"
+                      >
+                        <span>Contact Us</span>
+                      </Link>
+                    </div>
+                  </div>
+                </li>
               </nav>
 
               <div className="outer-box">
-                <div
-                  className="mobile-nav-toggler"
-                  onClick={toggleMobileMenu}
-                  role="button"
-                  aria-label="Toggle Mobile Menu"
-                >
+                <span className="divider"></span>
+
+                {/* Removed Cart and Search */}
+
+                <div className="mobile-nav-toggler">
                   <span className="icon lnr-icon-bars"></span>
                 </div>
               </div>
@@ -153,131 +153,59 @@ const Header = () => {
         </div>
       </div>
 
+      {/* Sticky Header */}
+      {isSticky && (
+        <div className="sticky-header">
+          <div className="auto-container">
+            <div className="inner-container">
+              {/* Logo */}
+              <div className="logo">
+                <Link href="/">
+                  <img src="images/logo-2.png" alt="Tronis" />
+                </Link>
+              </div>
+
+              {/* Right Col */}
+              <div className="nav-outer">
+                {/* Main Menu */}
+                <nav className="main-menu">
+                  <div className="navbar-collapse show collapse clearfix">
+                    <ul className="navigation clearfix">
+                      {/* Keep This Empty / Menu will come through JavaScript */}
+                    </ul>
+                  </div>
+                </nav>
+                {/* Mobile Navigation Toggler */}
+                <div className="mobile-nav-toggler">
+                  <span className="icon lnr-icon-bars"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Mobile Menu */}
-      <div className={`mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
-        <div className="menu-backdrop" onClick={closeMobileMenu}></div>
+      <div className="mobile-menu">
+        <div className="menu-backdrop"></div>
         <nav className="menu-box">
           <div className="upper-box">
             <div className="nav-logo">
               <Link href="/">
-                <Image
-                  src="/images/logo-2.png"
-                  alt="Tronis"
-                  width={150}
-                  height={40}
-                />
+                <img src="images/logo.png" alt="Tronis" />
               </Link>
             </div>
-            <div
-              className="close-btn"
-              onClick={closeMobileMenu}
-              role="button"
-              aria-label="Close Mobile Menu"
-            >
+            <div className="close-btn">
               <i className="icon fa fa-times"></i>
             </div>
           </div>
-          <ul className="navigation clearfix">
-            <li>
-              <Link href="/" onClick={closeMobileMenu}>
-                Home
-              </Link>
-            </li>
-            <li className="dropdown">
-              <Link href="/about" onClick={closeMobileMenu}>
-                About
-              </Link>
-            </li>
-            <li className="dropdown">
-              <Link href="#">Services</Link>
-              <ul>
-                <li>
-                  <Link href="/services" onClick={closeMobileMenu}>
-                    Services
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services" onClick={closeMobileMenu}>
-                    Services Details
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="dropdown">
-              <Link href="#">Blog</Link>
-              <ul>
-                <li>
-                  <Link href="/blog" onClick={closeMobileMenu}>
-                    News Grid
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/blog" onClick={closeMobileMenu}>
-                    News Details
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <div className="contact-info col-lg-2">
-              <div className="inner">
-                <Link
-                  href="contact"
-                  className="theme-btn btn-style-three"
-                  onClick={closeMobileMenu}
-                >
-                  <span>Contact Us</span>
-                </Link>
-              </div>
-            </div>
-          </ul>
-          <ul className="contact-list-one">
-            <li>
-              <div className="contact-info-box">
-                <i className="icon lnr-icon-phone-handset"></i>
-                <span className="title">Call Now</span>
-                <Link href="tel:+92880098670">+92 (8800) - 98670</Link>
-              </div>
-            </li>
-            <li>
-              <div className="contact-info-box">
-                <span className="icon lnr-icon-envelope1"></span>
-                <span className="title">Send Email</span>
-                <Link href="mailto:email@domain.com">email@domain.com</Link>
-              </div>
-            </li>
-            <li>
-              <div className="contact-info-box">
-                <span className="icon lnr-icon-clock"></span>
-                <span className="title">Working Hours</span>
-                Mon - Sat 8:00 - 6:30, Sunday - CLOSED
-              </div>
-            </li>
-          </ul>
 
-          <ul className="social-links">
-            <li>
-              <Link href="#">
-                <i className="fab fa-twitter"></i>
-              </Link>
-            </li>
-            <li>
-              <Link href="#">
-                <i className="fab fa-facebook-f"></i>
-              </Link>
-            </li>
-            <li>
-              <Link href="#">
-                <i className="fab fa-pinterest"></i>
-              </Link>
-            </li>
-            <li>
-              <Link href="#">
-                <i className="fab fa-instagram"></i>
-              </Link>
-            </li>
+          <ul className="navigation clearfix">
+            {/* Keep This Empty / Menu will come through JavaScript */}
           </ul>
         </nav>
       </div>
+      {/* End Mobile Menu */}
     </header>
   );
 };
