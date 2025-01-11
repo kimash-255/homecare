@@ -1,6 +1,6 @@
 const servicesData = [
   {
-    id: "1",
+    slug: "residential-services",
     title: "Residential Services",
     imgSrc: "/images/resource/service1-1.jpg",
     iconClass: "flaticon-oldkare-shield",
@@ -34,7 +34,7 @@ const servicesData = [
     },
   },
   {
-    id: "2",
+    slug: "therapeutic-and-recreational-services",
     title: "Therapeutic and Recreational Services",
     imgSrc: "/images/resource/service1-2.jpg",
     iconClass: "flaticon-oldkare-picture",
@@ -70,7 +70,7 @@ const servicesData = [
     },
   },
   {
-    id: "3",
+    slug: "skill-development-and-education",
     title: "Skill Development and Education",
     imgSrc: "/images/resource/service1-3.jpg",
     iconClass: "flaticon-oldkare-rocking-chair-1",
@@ -105,7 +105,7 @@ const servicesData = [
     },
   },
   {
-    id: "4",
+    slug: "health-and-wellness-services",
     title: "Health and Wellness Services",
     imgSrc: "/images/resource/service1-4.jpg",
     iconClass: "flaticon-oldkare-rocking-chair-1",
@@ -139,7 +139,7 @@ const servicesData = [
     },
   },
   {
-    id: "5",
+    slug: "day-programs",
     title: "Day Programs",
     imgSrc: "/images/resource/service1-5.jpg",
     iconClass: "flaticon-oldkare-shield",
@@ -175,7 +175,7 @@ const servicesData = [
     },
   },
   {
-    id: "6",
+    slug: "support-coordination",
     title: "Support Coordination",
     imgSrc: "/images/resource/service1-5.jpg",
     iconClass: "flaticon-oldkare-shield",

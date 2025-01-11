@@ -2,57 +2,100 @@ import Image from "next/image";
 import Link from "next/link";
 
 const FunFact = () => {
-    return (
-<section class="fun-fact-section">
-		<div class="auto-container">
-			<div class="fact-counter">
-				<div class="row">
-				
-					<div class="counter-block col-lg-3 col-sm-6 wow fadeInUp">
-						<div class="inner">
-							<div class="content">
-								<i class="icon flaticon-oldkare-old-people"></i>
-								<div class="count-box"><span class="count-text" data-speed="3000" data-stop="950">0</span>+</div>
-								<h6 class="counter-title">Completed Cases</h6>
-							</div>
-						</div>
-					</div>
-				
-					<div class="counter-block col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="200ms">
-						<div class="inner">
-							<div class="content">
-								<i class="icon flaticon-oldkare-old-woman"></i>
-								<div class="count-box"><span class="count-text" data-speed="3000" data-stop="500">0</span>+</div>
-								<h6 class="counter-title">Nursing Staff</h6>
-							</div>
-						</div>
-					</div>
-				
-					<div class="counter-block col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="300ms">
-						<div class="inner">
-							<div class="content">
-								<i class="icon flaticon-oldkare-medication"></i>
-								<div class="count-box"><span class="count-text" data-speed="3000" data-stop="200">0</span>k+</div>
-								<h6 class="counter-title">Senior Doctors</h6>
-							</div>
-						</div>
-					</div>
-			
-					<div class="counter-block col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="400ms">
-						<div class="inner">
-							<div class="content">
-								<i class="icon flaticon-oldkare-love"></i>
-								<div class="count-box"><span class="count-text" data-speed="3000" data-stop="900">0</span>+</div>
-								<h6 class="counter-title">Happy Couples</h6>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+  return (
+    <section className="fun-fact-section">
+      <div className="auto-container">
+        <div className="fact-counter">
+          <div className="row">
+            <div className="counter-block col-lg-3 col-sm-6 wow fadeInUp">
+              <div className="inner">
+                <div className="content">
+                  <i className="icon flaticon-oldkare-old-people"></i>
+                  <div className="count-box">
+                    <span
+                      className="count-text"
+                      data-speed="3000"
+                      data-stop="1500"
+                    >
+                      200
+                    </span>
+                    +
+                  </div>
+                  <h6 className="counter-title">Individuals Supported</h6>
+                </div>
+              </div>
+            </div>
 
-);
+            <div
+              className="counter-block col-lg-3 col-sm-6 wow fadeInUp"
+              data-wow-delay="200ms"
+            >
+              <div className="inner">
+                <div className="content">
+                  <i className="icon flaticon-oldkare-old-woman"></i>
+                  <div className="count-box">
+                    <span
+                      className="count-text"
+                      data-speed="3000"
+                      data-stop="600"
+                    >
+                      10
+                    </span>
+                    +
+                  </div>
+                  <h6 className="counter-title">Dedicated Caregivers</h6>
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="counter-block col-lg-3 col-sm-6 wow fadeInUp"
+              data-wow-delay="300ms"
+            >
+              <div className="inner">
+                <div className="content">
+                  <i className="icon flaticon-oldkare-medication"></i>
+                  <div className="count-box">
+                    <span
+                      className="count-text"
+                      data-speed="3000"
+                      data-stop="250"
+                    >
+                      24/
+                    </span>
+                    7
+                  </div>
+                  <h6 className="counter-title">Hours of Support Provided</h6>
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="counter-block col-lg-3 col-sm-6 wow fadeInUp"
+              data-wow-delay="400ms"
+            >
+              <div className="inner">
+                <div className="content">
+                  <i className="icon flaticon-oldkare-love"></i>
+                  <div className="count-box">
+                    <span
+                      className="count-text"
+                      data-speed="3000"
+                      data-stop="1200"
+                    >
+                      100
+                    </span>
+                    +
+                  </div>
+                  <h6 className="counter-title">Families Impacted</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default FunFact;

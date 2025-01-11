@@ -33,20 +33,25 @@ const Hero = () => {
           </div>
           <div className="image-column col-lg-7">
             <div className="image-box wow fadeInRight" data-wow-delay="600ms">
-              <figure className="image overlay-anim">
+              <figure
+                className="image overlay-anim"
+                style={{
+                  width: "800px", // Container width
+                  height: "400px", // Container height
+                  margin: "0 auto", // Centering
+                  overflow: "hidden", // Ensures the image does not overflow
+                }}
+              >
                 <Image
-                  src="/images/banner/1.jpg"
+                  src="/images/banner/FRONT YARD.jpg"
                   alt="Banner Image 1"
-                  width={600} // Specify the width of the image
-                  height={400} // Specify the height of the image
-                />
-              </figure>
-              <figure className="image-2 overlay-anim">
-                <Image
-                  src="/images/banner/2.jpg"
-                  alt="Banner Image 2"
-                  width={600} // Specify the width of the image
-                  height={400} // Specify the height of the image
+                  width={800}
+                  height={400}
+                  style={{
+                    objectFit: "cover", // Ensures the image fills the container
+                    width: "100%", // Image spans full width of the figure
+                    height: "100%", // Image spans full height of the figure
+                  }}
                 />
               </figure>
             </div>

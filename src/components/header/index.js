@@ -79,11 +79,25 @@ const Header = () => {
 
       <div className="header-lower">
         <div className="auto-container">
-          <div className="main-box">
-            <div className="logo-box" style={{ paddingRight: "20px" }}>
+          <div
+            className="main-box"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+            }}
+          >
+            {/* Logo Box */}
+            <div className="logo-box" style={{ marginRight: "50px" }}>
               <div className="logo">
                 <Link href="/">
-                  <strong style={{ fontSize: "20px", color: "#000" }}>
+                  <strong
+                    style={{
+                      fontSize: "20px",
+                      color: "#000",
+                      whiteSpace: "nowrap",
+                    }}
+                  >
                     Dream Care Homes
                   </strong>
                 </Link>
@@ -91,13 +105,13 @@ const Header = () => {
             </div>
 
             {/* Nav Box */}
-            <div className="nav-outer">
+            <div className="nav-outer" style={{ flex: 1 }}>
               <nav className="nav main-menu">
                 <ul className="navigation" style={{ paddingRight: "20px" }}>
-                  <li className="current dropdown">
+                  <li className="current">
                     <Link href="/">Home</Link>
                   </li>
-                  <li className="dropdown">
+                  <li>
                     <Link href="/about">About</Link>
                   </li>
                   <li className="dropdown">
@@ -111,7 +125,7 @@ const Header = () => {
                       </li>
                     </ul>
                   </li>
-                  <li className="dropdown">
+                  <li>
                     <Link href="/blog">Blog</Link>
                     <ul>
                       <li>
@@ -123,7 +137,6 @@ const Header = () => {
                     </ul>
                   </li>
                 </ul>
-
                 <li>
                   <div
                     className="contact-info col-lg-2"
@@ -140,13 +153,13 @@ const Header = () => {
                   </div>
                 </li>
               </nav>
+            </div>
 
-              <div className="outer-box">
-                <span className="divider"></span>
+            <div className="outer-box" style={{ marginLeft: "20px" }}>
+              <span className="divider"></span>
 
-                <div className="mobile-nav-toggler">
-                  <span className="icon lnr-icon-bars"></span>
-                </div>
+              <div className="mobile-nav-toggler">
+                <span className="icon lnr-icon-bars"></span>
               </div>
             </div>
           </div>
@@ -161,8 +174,13 @@ const Header = () => {
               {/* Logo */}
               <div className="logo">
                 <Link href="/">
-                  {/* Commented out the logo image and added text instead */}
-                  <strong style={{ fontSize: "30px", color: "#000" }}>
+                  <strong
+                    style={{
+                      fontSize: "30px",
+                      color: "#000",
+                      whiteSpace: "nowrap",
+                    }}
+                  >
                     Dream Care Homes
                   </strong>
                 </Link>
@@ -195,8 +213,13 @@ const Header = () => {
           <div className="upper-box">
             <div className="nav-logo">
               <Link href="/">
-                {/* Commented out the logo image and added text instead */}
-                <strong style={{ fontSize: "30px", color: "#000" }}>
+                <strong
+                  style={{
+                    fontSize: "30px",
+                    color: "#000",
+                    whiteSpace: "nowrap",
+                  }}
+                >
                   Dream Care Homes
                 </strong>
               </Link>
