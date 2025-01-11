@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import servicesData from "@/data/servicesData"; // Import the services data
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -117,12 +118,14 @@ const Header = () => {
                   <li className="dropdown">
                     <Link href="/services">Services</Link>
                     <ul>
-                      <li>
-                        <Link href="/services">Services</Link>
-                      </li>
-                      <li>
-                        <Link href="/services/1">Services Details</Link>
-                      </li>
+                      {/* Loop over servicesData to generate links dynamically */}
+                      {servicesData.map((service) => (
+                        <li key={service.slug}>
+                          <Link href={`/services/${service.slug}`}>
+                            {service.title}
+                          </Link>
+                        </li>
+                      ))}
                     </ul>
                   </li>
                   <li>
