@@ -161,7 +161,7 @@ const Header = () => {
             <div className="outer-box" style={{ marginLeft: "20px" }}>
               <span className="divider"></span>
 
-              <div className="mobile-nav-toggler">
+              <div className="mobile-nav-toggler" onClick={toggleMobileMenu}>
                 <span className="icon lnr-icon-bars"></span>
               </div>
             </div>
@@ -210,33 +210,111 @@ const Header = () => {
       )}
 
       {/* Mobile Menu */}
-      <div className="mobile-menu">
-        <div className="menu-backdrop"></div>
-        <nav className="menu-box">
-          <div className="upper-box">
-            <div className="nav-logo">
-              <Link href="/">
-                <strong
-                  style={{
-                    fontSize: "30px",
-                    color: "#000",
-                    whiteSpace: "nowrap",
-                  }}
-                >
-                  Dream Care Homes
-                </strong>
-              </Link>
-            </div>
-            <div className="close-btn">
-              <i className="icon fa fa-times"></i>
-            </div>
-          </div>
+      <div className={`${isMobileMenuOpen ? "mobile-menu-visible" : ""}`}>
+        <div className="mobile-menu">
+          <div className="menu-backdrop"></div>
 
-          <ul className="navigation clearfix">
-            {/* Keep This Empty / Menu will come through JavaScript */}
-          </ul>
-        </nav>
+          <nav className="menu-box">
+            <div className="upper-box">
+              <div className="nav-logo">
+                <Link href="/">
+                  <strong className="text-lg font-bold text-white whitespace-nowrap">
+                    Dream Care Homes
+                  </strong>
+                </Link>
+              </div>
+              <div className="close-btn" onClick={closeMobileMenu}>
+                <i className="icon fa fa-times"></i>
+              </div>
+            </div>
+
+            <ul className="navigation">
+              {/* Home */}
+              <li className="current">
+                <Link href="/" className="text-white hover:text-blue-600">
+                  Home
+                </Link>
+              </li>
+
+              {/* About */}
+              <li>
+                <Link href="/about" className="text-white hover:text-blue-600">
+                  About
+                </Link>
+              </li>
+
+              {/* Services Dropdown */}
+              <li className="dropdown">
+                <Link
+                  href="/services"
+                  className="text-white hover:text-blue-600"
+                >
+                  Services
+                </Link>
+                <ul>
+                  {/* Loop over servicesData to generate links dynamically */}
+                  {servicesData.map((service) => (
+                    <li key={service.slug}>
+                      <Link
+                        href={`/services/${service.slug}`}
+                        className="text-white hover:text-blue-600 block px-4 py-2"
+                      >
+                        {service.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+
+              {/* Blog */}
+              <li>
+                <Link href="/blog" className="text-white hover:text-blue-600">
+                  Blog
+                </Link>
+              </li>
+            </ul>
+
+            {/* Contact Info */}
+            <ul className="list-style-one mt-4">
+              <li className="text-white">
+                <i className="fa fa-map-marker-alt"></i> 415 NE 108th Ave,
+                Portland, Oregon, ZIP 97220
+              </li>
+              <li className="text-white">
+                <i className="fa fa-headset"></i> Call us:{" "}
+                <a href="tel:+12059608084" className="text-white">
+                  +1-205-960-8084
+                </a>
+              </li>
+            </ul>
+
+            {/* Social Links with spacing */}
+            <ul className="social-links flex mt-8 space-x-4">
+              <li>
+                <Link href="#" className="text-white hover:text-blue-600">
+                  <i className="fab fa-twitter"></i>
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="text-white hover:text-blue-600">
+                  <i className="fab fa-facebook-f"></i>
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="text-white hover:text-blue-600">
+                  <i className="fab fa-pinterest"></i>
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="text-white hover:text-blue-600">
+                  <i className="fab fa-instagram"></i>
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
+
       {/* End Mobile Menu */}
     </header>
   );
