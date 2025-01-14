@@ -89,7 +89,7 @@ const Header = () => {
             }}
           >
             {/* Logo Box */}
-            <div className="logo-box" style={{ marginRight: "50px" }}>
+            <div className="logo-box" style={{ marginRight: "80px" }}>
               <div className="logo">
                 <Link href="/">
                   <strong

@@ -23,7 +23,7 @@ const Service1 = () => {
                 <div className="image-box">
                   <figure className="image overlay-anim">
                     <a href="page-service-details.html">
-                      <img src="images/resource/service1-1.jpg" alt="" />
+                      <img src="/images/resource/service1-1.jpg" alt="" />
                     </a>
                   </figure>
                 </div>
@@ -45,7 +45,7 @@ const Service1 = () => {
                 <div className="image-box">
                   <figure className="image overlay-anim">
                     <a href="page-service-details.html">
-                      <img src="images/resource/service1-2.jpg" alt="" />
+                      <img src="/images/resource/service1-2.jpg" alt="" />
                     </a>
                   </figure>
                 </div>
@@ -89,7 +89,7 @@ const Service1 = () => {
                 <div className="image-box">
                   <figure className="image overlay-anim">
                     <a href="page-service-details.html">
-                      <img src="images/resource/service1-4.jpg" alt="" />
+                      <img src="/images/resource/service1-4.jpg" alt="" />
                     </a>
                   </figure>
                 </div>
@@ -111,7 +111,7 @@ const Service1 = () => {
                 <div className="image-box">
                   <figure className="image overlay-anim">
                     <a href="page-service-details.html">
-                      <img src="images/resource/service1-5.jpg" alt="" />
+                      <img src="/images/resource/service1-5.jpg" alt="" />
                     </a>
                   </figure>
                 </div>
