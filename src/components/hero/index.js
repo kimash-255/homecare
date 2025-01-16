@@ -64,11 +64,16 @@ const Hero = () => {
             <span className="sub-title text-xl font-bold mb-4">
               Welcome to Dream Care Homes LLC.
             </span>
-            <h1 className="text-5xl font-bold">
+            <h1 className="text-5xl font-bold !text-white">
               We Are Committed to Quality Care
             </h1>
-            <ul className="text-l mt-6">
-              <li>{textArray[currentIndex]}</li>
+            <ul className="text-l mt-6 ">
+              <li>
+                <h2 className="!text-white">
+                  We offer a nurturing environment to help individuals thrive in
+                  every aspect of life.
+                </h2>
+              </li>
             </ul>
             <div className="btn-box mt-8">
               <Link href="/about">

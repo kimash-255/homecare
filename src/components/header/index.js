@@ -89,7 +89,7 @@ const Header = () => {
             }}
           >
             {/* Logo Box */}
-            <div className="logo-box" style={{ marginRight: "80px" }}>
+            <div className="logo-box" style={{ marginRight: "50px" }}>
               <div className="logo">
                 <Link href="/">
                   <strong
@@ -143,7 +143,7 @@ const Header = () => {
                 <li>
                   <div
                     className="contact-info col-lg-2"
-                    style={{ paddingLeft: "250px" }}
+                    style={{ paddingLeft: "200px" }}
                   >
                     <div className="inner">
                       <Link

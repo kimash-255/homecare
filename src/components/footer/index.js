@@ -10,18 +10,18 @@ const Footer = () => {
       <div className="auto-container">
         <div className="footer-upper">
           <div className="row">
-            <div className="footer-logo col-xl-3 col-lg-2">
+            {/* <div className="footer-logo col-xl-2 col-lg-1">
               <div className="inner">
                 <div className="logo">
-                  <a href="index.html" className="logo-text">
+                  <Link href="/" className=" text-white logo-text">
                     Dream Care Homes
-                  </a>
+                  </Link>
                 </div>
               </div>
-            </div>
-            <div className="col-xl-7 col-lg-8">
-              <div className="row">
-                <div className="col-md-4 col-sm-6">
+            </div> */}
+            <div className="col-xl-10 col-lg-8 p-2">
+              <div className="row px-4">
+                <div className=" col-sm-6">
                   <div className="contact-info-block">
                     <div className="inner">
                       <i className="icon fa fa-phone-square"></i>
@@ -32,7 +32,7 @@ const Footer = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-4 col-sm-6">
+                <div className=" col-sm-6">
                   <div className="contact-info-block">
                     <div className="inner">
                       <i className="icon fa fa-envelope"></i>
@@ -45,7 +45,7 @@ const Footer = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-4 col-sm-6">
+                {/* <div className="col-md-4 col-sm-6">
                   <div className="contact-info-block before-none">
                     <div className="inner">
                       <i className="icon fa fa-map-marker"></i>
@@ -59,7 +59,7 @@ const Footer = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -83,12 +83,13 @@ const Footer = () => {
                   <div className="footer-abvout-icon-box">
                     <div className="inner-box pr-10">
                       <div className="icon flex-shrink-0">
-                        <i className="far fa-clock-rotate-left"></i>
+                        <i className="far fa-map-marker"></i>
                       </div>
                       <div className="inner">
-                        <h5 className="title">Opening Hours</h5>
+                        <h5 className="title">Dream Care Homes LLC</h5>
                         <div className="time">
-                          Mon-Sat(8.00-6.00) Sunday-Closed
+                          {/* Mon-Sat(8.00-6.00) Sunday-Closed */}
+                          415 NE 108th Ave, Portland Portland, Oregon, ZIP 97220
                         </div>
                       </div>
                     </div>

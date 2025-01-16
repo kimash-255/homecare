@@ -12,7 +12,7 @@ const ServiceDetailsPage = () => {
   const service = servicesData.find((service) => service.slug === slug);
 
   // If service is not found (invalid slug), return a message
-  if (!service) return <p>Service not found</p>;
+  if (!service) return <p></p>;
 
   return (
     <Layout>
