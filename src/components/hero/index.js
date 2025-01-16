@@ -4,9 +4,8 @@ import Link from "next/link";
 
 const Hero = () => {
   const sliderImages = [
-    "/images/resource/homecare-home-4.jpg",
-    "/images/resource/homecare-home-3.jpg",
-    "/images/resource/homecare-home-1.jpg",
+    "/images/resource1/homecare-home-4.jpg",
+    "/images/resource1/homecare-home-5.jpg",
   ];
 
   const textArray = [
