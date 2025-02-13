@@ -1,22 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/router";
-import servicesData from "@/data/servicesData"; // Adjust the path as necessary
+import servicesData from "@/data/servicesData";
 import Layout from "@/components/layout";
 import Link from "next/link";
 
 const ServiceDetailsPage = () => {
   const router = useRouter();
   const { slug } = router.query;
+  const [openIndex, setOpenIndex] = useState(null);
 
-  // Find the service with the matching slug from `servicesData`
   const service = servicesData.find((service) => service.slug === slug);
-
-  // If service is not found (invalid slug), return a message
   if (!service) return <p></p>;
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
 
   return (
     <Layout>
-      {/* Page Title Section */}
       <section
         className="page-title"
         style={{ backgroundImage: `url('/images/background/page-title.jpg')` }}
@@ -34,14 +35,11 @@ const ServiceDetailsPage = () => {
         </div>
       </section>
 
-      {/* Service Details Section */}
       <section className="services-details">
         <div className="container">
           <div className="row">
-            {/* Sidebar */}
             <div className="col-xl-4 col-lg-4">
               <div className="service-sidebar">
-                {/* Service List */}
                 <div className="sidebar-widget service-sidebar-single">
                   <div className="sidebar-service-list">
                     <ul>
@@ -58,8 +56,6 @@ const ServiceDetailsPage = () => {
                       ))}
                     </ul>
                   </div>
-
-                  {/* Contact Widget */}
                   <div className="service-details-help">
                     <h2 className="help-title">
                       Contact with us for any advice
@@ -71,8 +67,6 @@ const ServiceDetailsPage = () => {
                       </span>
                     </div>
                   </div>
-
-                  {/* Download PDF Button */}
                   <div className="service-sidebar-single-btn mt-4">
                     <div className="theme-btn btn-style-one d-grid">
                       <span className="btn-title">
@@ -84,8 +78,6 @@ const ServiceDetailsPage = () => {
                 </div>
               </div>
             </div>
-
-            {/* Service Details Content */}
             <div className="col-xl-8 col-lg-8">
               <div className="services-details__content">
                 <img src={service.imgSrc} alt={service.title} />
@@ -97,7 +89,6 @@ const ServiceDetailsPage = () => {
                   <p>{service.details.serviceCenter}</p>
                 </div>
 
-                {/* Features List */}
                 <div className="feature-list mt-4">
                   <div className="row clearfix">
                     {service.details.features.map((feature, index) => (
@@ -116,17 +107,38 @@ const ServiceDetailsPage = () => {
                   </div>
                 </div>
 
-                {/* FAQ Section */}
                 <div className="innerpage mt-4">
                   <h3>Frequently Asked Questions</h3>
                   <ul className="accordion-box">
                     {service.details.faqs.map((faq, index) => (
-                      <li key={index} className="accordion block">
-                        <div className="acc-btn">
+                      <li
+                        key={index}
+                        className={`accordion block ${
+                          openIndex === index ? "active" : ""
+                        }`}
+                      >
+                        <div
+                          className="acc-btn"
+                          onClick={() => toggleFAQ(index)}
+                          style={{ cursor: "pointer", fontWeight: "bold" }}
+                        >
                           {faq.question}
-                          <div className="icon fa fa-plus"></div>
+                          <span
+                            className={`icon fas ${
+                              openIndex === index ? "fa-minus" : "fa-plus"
+                            }`}
+                            style={{ marginLeft: "10px" }}
+                          ></span>
                         </div>
-                        <div className="acc-content">
+                        <div
+                          className="acc-content"
+                          style={{
+                            display: openIndex === index ? "block" : "none",
+                            transition: "all 0.3s ease-in-out",
+                            padding: "10px",
+                            borderTop: "1px solid #ddd",
+                          }}
+                        >
                           <div className="content">
                             <div className="text">{faq.answer}</div>
                           </div>

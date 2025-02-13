@@ -128,7 +128,7 @@ const Header = () => {
                       ))}
                     </ul>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="/blog">Blog</Link>
                     <ul>
                       <li>
@@ -138,16 +138,16 @@ const Header = () => {
                         <Link href="/blog/1">News Details</Link>
                       </li>
                     </ul>
-                  </li>
+                  </li> */}
                 </ul>
                 <li>
                   <div
                     className="contact-info col-lg-2"
-                    style={{ paddingLeft: "200px" }}
+                    style={{ paddingLeft: "300px" }}
                   >
                     <div className="inner">
                       <Link
-                        href="contact"
+                        href="/contact"
                         className="theme-btn btn-style-three"
                       >
                         <span> Get in Touch</span>
@@ -268,9 +268,9 @@ const Header = () => {
 
               {/* Blog */}
               <li>
-                <Link href="/blog" className="text-white hover:text-blue-600">
+                {/* <Link href="/blog" className="text-white hover:text-blue-600">
                   Blog
-                </Link>
+                </Link> */}
               </li>
             </ul>
 
@@ -282,9 +282,9 @@ const Header = () => {
               </li>
               <li className="text-white">
                 <i className="fa fa-headset"></i> Call us:{" "}
-                <a href="tel:+12059608084" className="text-white">
+                <Link href="tel:+12059608084" className="text-white">
                   +1-205-960-8084
-                </a>
+                </Link>
               </li>
             </ul>
 

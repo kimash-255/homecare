@@ -2,7 +2,7 @@ const servicesData = [
   {
     slug: "residential-services",
     title: "Residential Services",
-    imgSrc: "/images/resource/service1-1.jpg",
+    imgSrc: "/images/resource/residential-1.png",
     iconClass: "flaticon-oldkare-shield",
     description:
       "Our experienced staff provide around-the-clock support to ensure individuals receive the care they need.",
@@ -42,7 +42,7 @@ const servicesData = [
       "Promoting positive behaviors and enjoyment through therapy and recreational activities.",
     details: {
       overview:
-        "Our therapeutic and recreational services include behavioral support, arts, crafts, and access to therapies like occupational, physical, and speech therapy to encourage development and socialization.",
+        "Our therapeutic and recreational services include behavioral support, arts, crafts, and access to therapies like occupational, physical, and speech therapy to encourage development and socialization. We also offer outdoor activities such as camping, swimming, and recreational walks to further enhance well-being.",
       serviceCenter:
         "A blend of recreational activities and therapeutic programs designed to meet individual needs.",
       features: [
@@ -54,6 +54,10 @@ const servicesData = [
           imgSrc: "/images/resource/service-d2.jpg",
           text: "Access to physical, occupational, and speech therapies.",
         },
+        {
+          imgSrc: "/images/resource/service-d2.jpg",
+          text: "Outdoor activities like camping, swimming, and recreational walks.",
+        },
       ],
       faqs: [
         {
@@ -64,7 +68,7 @@ const servicesData = [
         {
           question: "What recreational activities are available?",
           answer:
-            "Arts, crafts, and community outings are part of the program.",
+            "Arts, crafts, outdoor activities, and community outings are part of the program.",
         },
       ],
     },

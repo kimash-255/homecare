@@ -10,13 +10,13 @@ const Service1 = () => {
       ></div>
       <div className="auto-container">
         <div className="sec-title text-center">
-          <span className="sub-title">What We Offers</span>
+          <span className="sub-title">What We Offer</span>
           <h2>
             We're committed to deliver the <br />
             high quality service
           </h2>
         </div>
-        <div className="carousel-outer wow fadeInUp">
+        {/* <div className="carousel-outer wow fadeInUp">
           <div className="services-carousel owl-carousel owl-theme default-nav">
             <div className="service-block-one">
               <div className="inner-box">
@@ -128,12 +128,12 @@ const Service1 = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="row justify-content-center mt-40 wow fadeInUp">
           <div className="col-lg-8">
             <div className="bottom-text d-flex align-items-center justify-content-between">
               <p className="mb-0">
-                Need any kind of Specialised Care services?
+                Need a walk through our facility?
                 <span className="color3 ps-2">Send a request now</span>
               </p>
               <a

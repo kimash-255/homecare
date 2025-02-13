@@ -9,20 +9,19 @@ const Hero = () => {
   ];
 
   const textArray = [
-    "A community of trained caregivers dedicated to providing a supportive, inclusive, and empowering environment that fosters growth and independence.",
-    "We offer a nurturing environment to help individuals thrive in every aspect of life.",
-    "Our mission is to ensure quality care tailored to the unique needs of each member of our community.",
+    "Providing 24-hour residential care for individuals with intellectual and developmental disabilities in a safe, nurturing environment.",
+    "Our dedicated team ensures personalized support, fostering independence and a fulfilling lifestyle.",
+    "We are committed to enhancing the quality of life with compassionate care, structured programs, and a community-focused approach.",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Automatically shift the content after 4 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % textArray.length);
     }, 4000);
 
-    return () => clearInterval(interval); // Clean up interval on component unmount
+    return () => clearInterval(interval);
   }, [textArray.length]);
 
   const sliderSettings = {
@@ -36,9 +35,8 @@ const Hero = () => {
   };
 
   return (
-    <section className=" relative w-full h-screen">
-      <div className="">
-        {/* Image Slider */}
+    <section className="relative w-full h-screen">
+      <div>
         <Slider {...sliderSettings} className="h-screen">
           {sliderImages.map((src, index) => (
             <div key={index} className="relative w-full h-screen">
@@ -51,10 +49,8 @@ const Hero = () => {
           ))}
         </Slider>
 
-        {/* Overlay using page-title class */}
         <div className="absolute inset-0 page-title"></div>
 
-        {/* Overlay Content */}
         <div className="absolute inset-0 flex items-center justify-center">
           <div
             className="auto-container flex flex-col items-center justify-center text-center text-white h-full px-8 lg:px-16"
@@ -64,13 +60,14 @@ const Hero = () => {
               Welcome to Dream Care Homes LLC.
             </span>
             <h1 className="text-5xl font-bold !text-white">
-              We Are Committed to Quality Care
+              Empowering Lives with 24/7 Support
             </h1>
             <ul className="text-l mt-6 ">
               <li>
                 <h2 className="!text-white">
-                  We offer a nurturing environment to help individuals thrive in
-                  every aspect of life.
+                  Providing round-the-clock care and a supportive environment
+                  for individuals with intellectual and developmental
+                  disabilities.
                 </h2>
               </li>
             </ul>
