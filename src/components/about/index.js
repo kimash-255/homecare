@@ -88,10 +88,10 @@ const About = () => {
           <div class="image-column col-xl-6 col-lg-6">
             <div class="inner-column wow fadeInLeft">
               <figure class="image-1 overlay-anim wow fadeInUp">
-                <img src="/images/resource/about1-1.jpg" alt="" />
+                <img src="/images/loved-one1.jpg" alt="" />
               </figure>
               <figure class="image-2 overlay-anim wow fadeInLeft">
-                <img src="/images/resource/about1-2.jpg" alt="" />
+                <img src="/images/loved-one2.jpg" alt="" />
               </figure>
               <div class="exp-box">
                 <div class="inner">

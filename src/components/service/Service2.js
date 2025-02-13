@@ -67,7 +67,10 @@ const Service2 = () => {
               <div className="image-box">
                 <span className="icon-star bounce-x"></span>
                 <figure className="image overlay-anim wow fadeInUp">
-                  <img src="/images/resource/about1-3.jpg" alt="" />
+                  <img
+                    src="/images//resource/services/life-skills-training.jpg"
+                    alt=""
+                  />
                 </figure>
                 <figure className="image-2 overlay-anim wow fadeInUp">
                   <img src="/images/resource/about1-4.jpg" alt="" />

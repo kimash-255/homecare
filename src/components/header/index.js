@@ -128,6 +128,10 @@ const Header = () => {
                       ))}
                     </ul>
                   </li>
+
+                  <li>
+                    <Link href="/gallery">Gallery</Link>
+                  </li>
                   {/* <li>
                     <Link href="/blog">Blog</Link>
                     <ul>
@@ -143,7 +147,7 @@ const Header = () => {
                 <li>
                   <div
                     className="contact-info col-lg-2"
-                    style={{ paddingLeft: "300px" }}
+                    style={{ paddingLeft: "200px" }}
                   >
                     <div className="inner">
                       <Link
@@ -264,6 +268,15 @@ const Header = () => {
                     </li>
                   ))}
                 </ul>
+              </li>
+
+              <li>
+                <Link
+                  href="/gallery"
+                  className="text-white hover:text-blue-600"
+                >
+                  Our Gallery
+                </Link>
               </li>
 
               {/* Blog */}
