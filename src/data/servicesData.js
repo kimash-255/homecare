@@ -2,7 +2,7 @@ const servicesData = [
   {
     slug: "residential-services",
     title: "Residential Services",
-    imgSrc: "/images/resource/residential-1.png",
+    imgSrc: "/images/resource/services/supportive-residential-environment.jpg",
     iconClass: "flaticon-oldkare-shield",
     description:
       "Our experienced staff provide around-the-clock support to ensure individuals receive the care they need.",
@@ -13,11 +13,11 @@ const servicesData = [
         "Our residential programs provide personalized care plans to promote independence and well-being.",
       features: [
         {
-          imgSrc: "/images/resource/service-d1.jpg",
+          imgSrc: "/images/resource/services/24-7-residential-support.jpg",
           text: "24/7 support from trained staff.",
         },
         {
-          imgSrc: "/images/resource/service-d2.jpg",
+          imgSrc: "/images/resource/services/medication-management.jpg",
           text: "Medication management and daily living assistance.",
         },
       ],
@@ -36,7 +36,7 @@ const servicesData = [
   {
     slug: "therapeutic-and-recreational-services",
     title: "Therapeutic and Recreational Services",
-    imgSrc: "/images/resource/service1-2.jpg",
+    imgSrc: "/images/resource/services/therapy-instrument.jpg",
     iconClass: "flaticon-oldkare-picture",
     description:
       "Promoting positive behaviors and enjoyment through therapy and recreational activities.",
@@ -47,15 +47,15 @@ const servicesData = [
         "A blend of recreational activities and therapeutic programs designed to meet individual needs.",
       features: [
         {
-          imgSrc: "/images/resource/service-d1.jpg",
+          imgSrc: "/images/resource/services/behaviour-support.jpg",
           text: "Individualized behavioral support plans.",
         },
         {
-          imgSrc: "/images/resource/service-d2.jpg",
+          imgSrc: "/images/resource/services/physical-therapy.jpg",
           text: "Access to physical, occupational, and speech therapies.",
         },
         {
-          imgSrc: "/images/resource/service-d2.jpg",
+          imgSrc: "/images/resource/services/pool-residential-services.jpg",
           text: "Outdoor activities like camping, swimming, and recreational walks.",
         },
       ],
@@ -76,7 +76,7 @@ const servicesData = [
   {
     slug: "skill-development-and-education",
     title: "Skill Development and Education",
-    imgSrc: "/images/resource/service1-3.jpg",
+    imgSrc: "/images/resource/services/life-skills-training.jpg",
     iconClass: "flaticon-oldkare-rocking-chair-1",
     description:
       "Empowering individuals through life skills training and educational support.",
@@ -87,12 +87,13 @@ const servicesData = [
         "Customized programs to enhance daily living, vocational, and self-advocacy skills.",
       features: [
         {
-          imgSrc: "/images/resource/service-d1.jpg",
+          imgSrc: "/images/resource/services/daily-independence.jpg",
           text: "Life skills training for daily independence.",
         },
         {
-          imgSrc: "/images/resource/service-d2.jpg",
-          text: "Vocational training and employment support.",
+          imgSrc:
+            "/images/resource/services/vocational-training-and-support1.jpg",
+          text: "Vocational training and support.",
         },
       ],
       faqs: [
@@ -111,7 +112,7 @@ const servicesData = [
   {
     slug: "health-and-wellness-services",
     title: "Health and Wellness Services",
-    imgSrc: "/images/resource/service1-4.jpg",
+    imgSrc: "/images/resource/services/health-and-wellness.jpg",
     iconClass: "flaticon-oldkare-rocking-chair-1",
     description:
       "Promoting health and wellness through medical, nutritional, and exercise programs.",
@@ -122,11 +123,11 @@ const servicesData = [
         "Comprehensive programs to enhance physical and mental well-being.",
       features: [
         {
-          imgSrc: "/images/resource/service-d1.jpg",
+          imgSrc: "/images/resource/services/routine-check-ups1.jpg",
           text: "Access to medical professionals and routine check-ups.",
         },
         {
-          imgSrc: "/images/resource/service-d2.jpg",
+          imgSrc: "/images/resource/services/nutrition-planning1.jpg",
           text: "Nutrition planning and guided exercise activities.",
         },
       ],
@@ -145,7 +146,7 @@ const servicesData = [
   {
     slug: "day-programs",
     title: "Day Programs",
-    imgSrc: "/images/resource/service1-5.jpg",
+    imgSrc: "/images/resource/services/daycare-programs.jpg",
     iconClass: "flaticon-oldkare-shield",
     description:
       "Community-based activities for socialization, education, and personal growth.",
@@ -156,11 +157,12 @@ const servicesData = [
         "Enriching activities to enhance life skills and social connections.",
       features: [
         {
-          imgSrc: "/images/resource/service-d1.jpg",
+          imgSrc: "/images/resource/services/community-engagement.jpg",
           text: "Opportunities for community engagement and growth.",
         },
         {
-          imgSrc: "/images/resource/service-d2.jpg",
+          imgSrc:
+            "/images/resource/services/social-recreational-and-educational-activities.jpg",
           text: "Social, recreational, and educational activities.",
         },
       ],
@@ -181,7 +183,7 @@ const servicesData = [
   {
     slug: "support-coordination",
     title: "Support Coordination",
-    imgSrc: "/images/resource/service1-5.jpg",
+    imgSrc: "/images/resource/services/support-coordination-services.jpg",
     iconClass: "flaticon-oldkare-shield",
     description:
       "Helping families develop personalized plans and access necessary resources.",
@@ -192,11 +194,11 @@ const servicesData = [
         "Dedicated coordinators working to connect families with the right services.",
       features: [
         {
-          imgSrc: "/images/resource/service-d1.jpg",
+          imgSrc: "/images/resource/services/personalized-support-plans.jpg",
           text: "Personalized support plans for individuals and families.",
         },
         {
-          imgSrc: "/images/resource/service-d2.jpg",
+          imgSrc: "/images/resource/services/access.jpg",
           text: "Access to community resources and services.",
         },
       ],

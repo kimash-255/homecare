@@ -62,19 +62,17 @@ const ServiceDetailsPage = () => {
                     </h2>
                     <div className="help-contact">
                       <p>Need help? Talk to an expert</p>
-                      <span className="phone-number">
-                        +892 ( 123 ) 112 - 9999
-                      </span>
+                      <span className="phone-number"> +1-205-960-8084</span>
                     </div>
                   </div>
-                  <div className="service-sidebar-single-btn mt-4">
+                  {/* <div className="service-sidebar-single-btn mt-4">
                     <div className="theme-btn btn-style-one d-grid">
                       <span className="btn-title">
                         <span className="fas fa-file-pdf"></span> Download PDF
                         file
                       </span>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

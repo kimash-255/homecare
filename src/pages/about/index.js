@@ -29,7 +29,7 @@ const AboutPage = () => {
       <About />
       <Marquee />
       <Service />
-      <Team />
+      {/* <Team /> */}
     </Layout>
   );
 };

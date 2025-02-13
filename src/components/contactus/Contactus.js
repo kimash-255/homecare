@@ -116,11 +116,7 @@ const ContactUs = () => {
                 <div className="sec-title">
                   <span className="sub-title">Need any help?</span>
                   <h2>Get in touch with us</h2>
-                  <div className="text">
-                    Lorem ipsum is simply free text available dolor sit amet
-                    consectetur notted adipisicing elit sed do eiusmod tempor
-                    incididunt simply dolore magna.
-                  </div>
+                  <div className="text"></div>
                 </div>
                 <ul className="list-unstyled contact-details__info">
                   <li>
@@ -129,8 +125,8 @@ const ContactUs = () => {
                     </div>
                     <div className="text">
                       <h6 className="mb-1">Have any question?</h6>
-                      <a href="tel:+920209850">
-                        <span>Free</span> +92 (020)-9850
+                      <a href="tel:+1-205-960-8084">
+                        <span>Free</span> : +1-205-960-8084
                       </a>
                     </div>
                   </li>
@@ -140,7 +136,9 @@ const ContactUs = () => {
                     </div>
                     <div className="text">
                       <h6 className="mb-1">Write email</h6>
-                      <a href="mailto:info@example.com">info@example.com</a>
+                      <Link href="mailto:dreamcarehomes@yahoo.com">
+                        dreamcarehomes@yahoo.com
+                      </Link>
                     </div>
                   </li>
                   <li>
@@ -149,7 +147,7 @@ const ContactUs = () => {
                     </div>
                     <div className="text">
                       <h6 className="mb-1">Visit anytime</h6>
-                      <span>66 broklyn golden street. New York</span>
+                      <span>415 NE 108th Ave, Portland, Oregon, ZIP 97220</span>
                     </div>
                   </li>
                 </ul>
@@ -162,7 +160,7 @@ const ContactUs = () => {
       <section className="map-section py-0">
         <iframe
           className="map w-100"
-          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=415%20NE%20108th%20Ave,%20Portland,%20Oregon,%2097220+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
           allowFullScreen
           loading="lazy"
         ></iframe>
