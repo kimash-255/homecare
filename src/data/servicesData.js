@@ -54,10 +54,6 @@ const servicesData = [
           imgSrc: "/images/resource/services/physical-therapy.jpg",
           text: "Access to physical, occupational, and speech therapies.",
         },
-        {
-          imgSrc: "/images/resource/services/pool-residential-services.jpg",
-          text: "Outdoor activities like camping, swimming, and recreational walks.",
-        },
       ],
       faqs: [
         {
@@ -94,6 +90,10 @@ const servicesData = [
           imgSrc:
             "/images/resource/services/vocational-training-and-support1.jpg",
           text: "Vocational training and support.",
+        },
+        {
+          imgSrc: "/images/resource/services/pool-residential-services.jpg",
+          text: "Skills like swimming.",
         },
       ],
       faqs: [
@@ -146,13 +146,13 @@ const servicesData = [
   {
     slug: "day-programs",
     title: "Day Programs",
-    imgSrc: "/images/resource/services/daycare-programs.jpg",
+    imgSrc: "/images/resource/services/day-program-van.jpg",
     iconClass: "flaticon-oldkare-shield",
     description:
       "Community-based activities for socialization, education, and personal growth.",
     details: {
       overview:
-        "Our day programs focus on community integration and personal growth, offering opportunities for socialization, educational activities, and skill-building.",
+        "Our day programs have adequate staff who focus on community integration and personal growth, offering opportunities for socialization, educational activities, and skill-building.",
       serviceCenter:
         "Enriching activities to enhance life skills and social connections.",
       features: [

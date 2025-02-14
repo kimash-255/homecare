@@ -23,16 +23,18 @@ const Gallery = () => (
                   borderRadius: "8px",
                 }}
               >
-                <img
-                  src={image.imgSrc}
-                  alt={`Gallery Image ${index + 1}`}
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                    borderRadius: "8px",
-                  }}
-                />
+                <a href={image.imgSrc}>
+                  <img
+                    src={image.imgSrc}
+                    alt={`Gallery Image ${index + 1}`}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                      borderRadius: "8px",
+                    }}
+                  />
+                </a>
               </figure>
             </div>
           </div>

@@ -25,10 +25,12 @@ const About = () => {
             <div class="inner-column">
               <div class="sec-title">
                 <span class="sub-title">Get to Know Us</span>
-                <h2>Living life to the fullest begins right now with you</h2>
+                <h2>Personalized Care for Adults with I/DD</h2>
                 <div class="text">
-                  Residential homes for Individual with developmental
-                  disabilities
+                  At Dream Care Homes LLC, we are committed to providing a safe,
+                  nurturing, and supportive environment where adults with
+                  Intellectual and Developmental Disabilities can thrive, gain
+                  independence, and enjoy a fulfilling life.
                 </div>
               </div>
 
@@ -36,34 +38,43 @@ const About = () => {
                 <div class="info-box col-sm-6">
                   <div class="inner">
                     <i class="icon flaticon-oldkare-nurse"></i>
-                    <h6 class="title">Person-Centered</h6>
+                    <h6 class="title">24/7 Care & Support</h6>
                     <div class="text">
-                      We prioritize the unique needs of each individual
+                      Our compassionate staff provide round-the-clock assistance
+                      with daily living activities, medication management, and
+                      transportation.
                     </div>
                   </div>
                 </div>
                 <div class="info-box col-sm-6">
                   <div class="inner">
                     <i class="icon flaticon-oldkare-retirement-home"></i>
-                    <h6 class="title">Community and Belonging</h6>
-                    <div class="text">Opportunities to socialise</div>
+                    <h6 class="title">A Home-Like Setting</h6>
+                    <div class="text">
+                      Private, well-furnished bedrooms and spacious shared areas
+                      create a warm, family-like atmosphere.
+                    </div>
                   </div>
                 </div>
                 <div class="info-box col-sm-6">
                   <div class="inner">
                     <i class="icon flaticon-oldkare-savings"></i>
-                    <h6 class="title">Well-being</h6>
+                    <h6 class="title">Community Engagement</h6>
                     <div class="text">
-                      We prioritize physical, emotional,mental health
+                      Residents participate in social outings, community
+                      activities, and events that promote inclusion and
+                      belonging.
                     </div>
                   </div>
                 </div>
                 <div class="info-box col-sm-6">
                   <div class="inner">
                     <i class="icon flaticon-oldkare-emergency"></i>
-                    <h6 class="title">Empowerment</h6>
+                    <h6 class="title">Empowerment & Independence</h6>
                     <div class="text">
-                      Fostering independence and self-sufficiency.
+                      We encourage self-sufficiency and personal growth,
+                      supporting residents in making choices that enhance their
+                      quality of life.
                     </div>
                   </div>
                 </div>
@@ -88,10 +99,10 @@ const About = () => {
           <div class="image-column col-xl-6 col-lg-6">
             <div class="inner-column wow fadeInLeft">
               <figure class="image-1 overlay-anim wow fadeInUp">
-                <img src="/images/loved-one1.jpg" alt="" />
+                <img src="/images/loved-one3.jpg" alt="" />
               </figure>
               <figure class="image-2 overlay-anim wow fadeInLeft">
-                <img src="/images/loved-one2.jpg" alt="" />
+                <img src="/images/loved-one4.jpg" alt="" />
               </figure>
               <div class="exp-box">
                 <div class="inner">

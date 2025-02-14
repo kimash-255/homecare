@@ -60,7 +60,7 @@ const Hero = () => {
               Welcome to Dream Care Homes LLC.
             </span>
             <h1 className="text-5xl font-bold !text-white">
-              Empowering Lives with 24/7 Support
+              24/7 hr residential Group Home for intellectual disabilities
             </h1>
             <ul className="text-l mt-6 ">
               <li>

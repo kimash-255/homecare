@@ -58,7 +58,7 @@ const ServiceDetailsPage = () => {
                   </div>
                   <div className="service-details-help">
                     <h2 className="help-title">
-                      Contact with us for a walk through our facility
+                      Contact us for a walk through our facility
                     </h2>
                     <div className="help-contact">
                       <p>Need help? Talk to an expert</p>

@@ -13,7 +13,10 @@ const CallToAction = () => {
           <div className="row align-items-center">
             <div className="col-lg-4">
               <div className="img-thumb">
-                <img src="/images/call-to-action.jpg" alt="" />
+                <img
+                  src="/images/resource/services/24-7-residential-support.jpg"
+                  alt=""
+                />
               </div>
             </div>
             <div className="col-lg-4">

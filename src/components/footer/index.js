@@ -89,7 +89,8 @@ const Footer = () => {
                         <h5 className="title">Dream Care Homes LLC</h5>
                         <div className="time">
                           {/* Mon-Sat(8.00-6.00) Sunday-Closed */}
-                          415 NE 108th Ave, Portland Portland, Oregon, ZIP 97220
+                          415 NE 108th Ave & 3819 NE k112, Portland Portland,
+                          Oregon, ZIP 97220
                         </div>
                       </div>
                     </div>
