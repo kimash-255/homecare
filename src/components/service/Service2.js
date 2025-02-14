@@ -68,7 +68,7 @@ const Service2 = () => {
                 <span className="icon-star bounce-x"></span>
                 <figure className="image overlay-anim wow fadeInUp">
                   <img
-                    src="/images/resource/services/life-skills-training.jpg"
+                    src="/images/resource/services/life-skills-training1.jpg"
                     alt=""
                   />
                 </figure>

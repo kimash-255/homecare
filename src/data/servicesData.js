@@ -72,7 +72,7 @@ const servicesData = [
   {
     slug: "skill-development-and-education",
     title: "Skill Development and Education",
-    imgSrc: "/images/resource/services/life-skills-training.jpg",
+    imgSrc: "/images/resource/services/life-skills-training1.jpg",
     iconClass: "flaticon-oldkare-rocking-chair-1",
     description:
       "Empowering individuals through life skills training and educational support.",
@@ -86,14 +86,10 @@ const servicesData = [
           imgSrc: "/images/resource/services/daily-independence.jpg",
           text: "Life skills training for daily independence.",
         },
-        {
-          imgSrc:
-            "/images/resource/services/vocational-training-and-support1.jpg",
-          text: "Vocational training and support.",
-        },
+
         {
           imgSrc: "/images/resource/services/pool-residential-services.jpg",
-          text: "Skills like swimming.",
+          text: ".",
         },
       ],
       faqs: [
@@ -162,7 +158,7 @@ const servicesData = [
         },
         {
           imgSrc:
-            "/images/resource/services/social-recreational-and-educational-activities.jpg",
+            "/images/resource/services/social-recreational-and-educational-activities1.jpg",
           text: "Social, recreational, and educational activities.",
         },
       ],
