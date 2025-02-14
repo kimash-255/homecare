@@ -23,12 +23,12 @@ const Service2 = () => {
               <div className="about-block-two">
                 <div className="inner-box">
                   <h4 className="title">
-                    <i className="fal fa-circle-check"></i>Inclusion and
-                    Community
+                    <i className="fal fa-circle-check"></i>Comprehensive 24/7
+                    Care & Support
                   </h4>
                   <div className="text">
-                    Offering a sense of belonging and connection, supporting
-                    individuals to participate in their communities.
+                    Our experienced and compassionate staff are available around
+                    the clock to provide personalized assistance.
                   </div>
                 </div>
               </div>
@@ -36,11 +36,12 @@ const Service2 = () => {
               <div className="about-block-two">
                 <div className="inner-box">
                   <h4 className="title">
-                    <i className="fal fa-circle-check"></i>24/7 Staff support
+                    <i className="fal fa-circle-check"></i>Daily Living
+                    Assistance
                   </h4>
                   <div className="text">
-                    Trained staff provide around-the-clock assistance with daily
-                    living activities.
+                    Support with personal hygiene, meal preparation, and
+                    household tasks to ensure comfort and well-being.
                   </div>
                 </div>
               </div>
@@ -51,7 +52,21 @@ const Service2 = () => {
                     <i className="fal fa-circle-check"></i>Medication Management
                   </h4>
                   <div className="text">
-                    Assistance with administering and managing medications.
+                    Ensuring timely and accurate administration of prescribed
+                    medications for optimal health.
+                  </div>
+                </div>
+              </div>
+
+              <div className="about-block-two">
+                <div className="inner-box">
+                  <h4 className="title">
+                    <i className="fal fa-circle-check"></i>Transportation
+                    Services
+                  </h4>
+                  <div className="text">
+                    Safe and reliable transport for medical appointments, social
+                    outings, and community engagement.
                   </div>
                 </div>
               </div>
