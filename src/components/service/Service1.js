@@ -136,12 +136,9 @@ const Service1 = () => {
                 Need a walk through our facility?
                 <span className="color3 ps-2">Send a request now</span>
               </p>
-              <a
-                href="page-contact.html"
-                className="theme-btn btn-style-one small"
-              >
+              <Link href="/contact" className="theme-btn btn-style-one small">
                 <span className="btn-title">Get in Touch</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
