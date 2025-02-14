@@ -180,7 +180,7 @@ const Footer = () => {
             </div>
 
             <div className="footer-column col-xl-3 col-lg-4 col-md-6 col-sm-6">
-              <div className="footer-widget blog-widget">
+              {/* <div className="footer-widget blog-widget">
                 <h5 className="widget-title">Latest news</h5>
                 <div className="widget-content">
                   <article className="recent-post">
@@ -235,7 +235,7 @@ const Footer = () => {
                     </div>
                   </article>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
