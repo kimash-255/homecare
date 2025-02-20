@@ -149,8 +149,14 @@ const ContactUs = () => {
                       <h6 className="mb-1">Visit anytime</h6>
                       <span>
                         {" "}
-                        415 NE 108th Ave & 3819 NE k112, Portland Portland,
-                        Oregon, ZIP 97220
+                        <ul className="space-y-2 text-gray-200">
+                          <li className="border-l-4 border-blue-500 pl-2">
+                            415 NE 108TH AVE, 97220 PORTLAND, OREGON
+                          </li>
+                          <li className="border-l-4 border-green-500 pl-2">
+                            3819 NE 112TH AVE, 97220 PORTLAND, OREGON
+                          </li>
+                        </ul>
                       </span>
                     </div>
                   </li>
