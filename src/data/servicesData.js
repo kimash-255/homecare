@@ -142,7 +142,7 @@ const servicesData = [
   {
     slug: "day-programs",
     title: "Day Programs",
-    imgSrc: "/images/resource/services/day-program-van.jpg",
+    imgSrc: "/images/resource/services/honda-odyssey.webp",
     iconClass: "flaticon-oldkare-shield",
     description:
       "Community-based activities for socialization, education, and personal growth.",

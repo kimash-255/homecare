@@ -35,7 +35,10 @@ export default function Document() {
         <link href="/css/style.css" rel="stylesheet" />
 
         {/* Scripts */}
-
+      </Head>
+      <body className="antialiased">
+        <Main />
+        <NextScript />
         {/* jQuery and Bootstrap JS (load with async) */}
         <script src="/js/jquery.js" async></script>
         <script src="/js/popper.min.js" async></script>
@@ -103,10 +106,6 @@ export default function Document() {
           src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
           async
         ></script> */}
-      </Head>
-      <body className="antialiased">
-        <Main />
-        <NextScript />
       </body>
     </Html>
   );

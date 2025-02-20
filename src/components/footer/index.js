@@ -3,6 +3,8 @@ import Link from "next/link";
 import servicesData from "@/data/servicesData";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="main-footer footer-style-one">
       <div className="bg-pattern-2 bounce-y"></div>
@@ -245,7 +247,8 @@ const Footer = () => {
         <div className="auto-container">
           <div className="inner-container">
             <div className="copyright-text">
-              © Copyright 2024 by Dream Care Homes LLC
+              © Copyright {currentYear} by Dream Care Homes LLC. Designed by{" "}
+              <Link href="https://msladesigns.com">Msladesigns</Link>
             </div>
           </div>
         </div>

@@ -33,18 +33,21 @@ const Header = () => {
 
   return (
     <header className="main-header header-style-one">
-      {/* Header Top */}
       <div className="header-top">
         <div className="auto-container">
           <div className="inner-container">
             <div className="top-left">
               <ul className="list-style-one">
                 <li>
-                  <i className="fa fa-map-marker-alt"></i> 415 NE 108th Ave,
-                  Portland, Oregon, ZIP 97220
+                  <i className="fa fa-map-marker-alt"></i> 415 NE 108TH AVE,
+                  97220 PORTLAND, OREGON
                 </li>
                 <li>
-                  <i className="fa fa-headset"></i> Call us:{" "}
+                  <i className="fa fa-map-marker-alt"></i> 3819 NE 112TH AVE,
+                  97220 PORTLAND, OREGON
+                </li>
+                <li>
+                  <i className="fa fa-headset"></i> CALL US:{" "}
                   <a href="tel:+12059608084">+1-205-960-8084</a>
                 </li>
               </ul>
@@ -76,7 +79,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-      {/* Header Top */}
 
       <div className="header-lower">
         <div className="auto-container">

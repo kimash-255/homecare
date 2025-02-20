@@ -147,7 +147,11 @@ const ContactUs = () => {
                     </div>
                     <div className="text">
                       <h6 className="mb-1">Visit anytime</h6>
-                      <span>415 NE 108th Ave, Portland, Oregon, ZIP 97220</span>
+                      <span>
+                        {" "}
+                        415 NE 108th Ave & 3819 NE k112, Portland Portland,
+                        Oregon, ZIP 97220
+                      </span>
                     </div>
                   </li>
                 </ul>
