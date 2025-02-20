@@ -67,7 +67,7 @@ const Footer = () => {
 
             <div className="contact-info col-lg-2">
               <div className="inner">
-                <Link href="contact" className="theme-btn btn-style-three">
+                <Link href="/contact" className="theme-btn btn-style-three">
                   <span>Get in Touch</span>
                 </Link>
               </div>
@@ -78,21 +78,33 @@ const Footer = () => {
 
       <div className="widgets-section">
         <div className="auto-container">
-          <div className="row align-items-center">
+          <div className="row align-items-cente">
             <div className="footer-column pe-0 col-xl-3 col-lg-4 col-md-6 col-sm-12">
               <div className="footer-widget about-widget">
                 <div className="widget-content">
+                  <h5 className="text-2xl text-white mb-2">
+                    Dream Care Homes LLC
+                  </h5>
                   <div className="footer-abvout-icon-box">
                     <div className="inner-box pr-10">
-                      <div className="icon flex-shrink-0">
-                        <i className="far fa-map-marker"></i>
+                      <div className="flex flex-col">
+                        <h5 className="title text-base mb-1 font-bold uppercase">
+                          Location
+                        </h5>
+                        <div className="icon flex-shrink-0">
+                          <i className="far fa-map-marker"></i>
+                        </div>
                       </div>
                       <div className="inner">
-                        <h5 className="title">Dream Care Homes LLC</h5>
                         <div className="time">
-                          {/* Mon-Sat(8.00-6.00) Sunday-Closed */}
-                          415 NE 108th Ave & 3819 NE k112, Portland Portland,
-                          Oregon, ZIP 97220
+                          <ul className="space-y-2 text-gray-200">
+                            <li className="border-l-4 border-blue-500 pl-2">
+                              415 NE 108TH AVE, 97220 PORTLAND, OREGON
+                            </li>
+                            <li className="border-l-4 border-green-500 pl-2">
+                              3819 NE 112TH AVE, 97220 PORTLAND, OREGON
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -128,7 +140,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="footer-column col-lg-2 offset-xl-1 col-md-6 col-sm-6">
+            <div className="footer-column col-lg-4 offset-xl-1 col-md-6 col-sm-6">
               <div className="footer-widget links-widget">
                 <h5 className="widget-title">Types of Services</h5>
                 <div className="widget-content">
@@ -139,8 +151,9 @@ const Footer = () => {
                       </Link>
                       <ul>
                         {servicesData.map((service) => (
-                          <li key={service.slug}>
+                          <li key={service.slug} className="text-xs">
                             <Link href={`/services/${service.slug}`}>
+                              <i className="arrow-icon far fa-window-minimize"></i>{" "}
                               {service.title.split(" ")[0]}{" "}
                               {service.title.split(" ").slice(-1)}
                             </Link>
@@ -159,21 +172,21 @@ const Footer = () => {
                 <div className="widget-content">
                   <ul className="user-links">
                     <li>
-                      <Link href="#">
+                      <Link href="/about">
                         <i className="arrow-icon far fa-window-minimize"></i>{" "}
                         About Us
                       </Link>
                     </li>
                     <li>
-                      <Link href="#">
+                      <Link href="/services">
                         <i className="arrow-icon far fa-window-minimize"></i>{" "}
                         Services
                       </Link>
                     </li>
                     <li>
-                      <Link href="#">
+                      <Link href="/gallery">
                         <i className="arrow-icon far fa-window-minimize"></i>{" "}
-                        Latest News
+                        Gallery
                       </Link>
                     </li>
                   </ul>
