@@ -17,7 +17,7 @@ const FunFact = () => {
                       data-speed="3000"
                       data-stop="1500"
                     >
-                      200
+                      4
                     </span>
                     +
                   </div>
@@ -83,7 +83,7 @@ const FunFact = () => {
                       data-speed="3000"
                       data-stop="1200"
                     >
-                      100
+                      10
                     </span>
                     +
                   </div>

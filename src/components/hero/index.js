@@ -56,10 +56,10 @@ const Hero = () => {
             className="auto-container flex flex-col items-center justify-center text-center text-white h-full px-8 lg:px-16"
             style={{ marginTop: "150px" }}
           >
-            <span className="sub-title text-xl font-bold mb-4">
+            <span className="title text-lg md:text-5xl font-bold mb-4">
               Welcome to Dream Care Homes LLC.
             </span>
-            <h1 className="text-5xl font-bold !text-white">
+            <h1 className="text-xl md:text-5xl font-bold !text-white">
               24/7 hr residential Group Home for intellectual disabilities
             </h1>
             <ul className="text-l mt-6 ">
