@@ -90,7 +90,7 @@ const About = () => {
                 <a href="tel:+01750050088" class="info-btn">
                   <i class="icon fa fa-phone"></i>
                   <small>Call Anytime</small>
-                  <strong>+1-205-960-8084</strong>
+                  <strong>971-460-9993</strong>
                 </a>
               </div>
             </div>

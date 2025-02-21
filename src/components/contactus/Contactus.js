@@ -125,8 +125,8 @@ const ContactUs = () => {
                     </div>
                     <div className="text">
                       <h6 className="mb-1">Have any question?</h6>
-                      <a href="tel:+1-205-960-8084">
-                        <span>Free</span> : +1-205-960-8084
+                      <a href="tel:971-460-9993">
+                        <span>Free</span> : 971-460-9993
                       </a>
                     </div>
                   </li>
@@ -139,6 +139,10 @@ const ContactUs = () => {
                       <Link href="mailto:dreamcarehomes@yahoo.com">
                         dreamcarehomes@yahoo.com
                       </Link>
+                      <br />
+                      <Link href="mailto:dreamcarehomes17@gmail.com">
+                        dreamcarehomes17@gmail.com
+                      </Link>
                     </div>
                   </li>
                   <li>
@@ -149,7 +153,7 @@ const ContactUs = () => {
                       <h6 className="mb-1">Visit anytime</h6>
                       <span>
                         {" "}
-                        <ul className="space-y-2 text-gray-200">
+                        <ul className="space-y-2 text-gray-600 text-sm">
                           <li className="border-l-4 border-blue-500 pl-2">
                             415 NE 108TH AVE, 97220 PORTLAND, OREGON
                           </li>
