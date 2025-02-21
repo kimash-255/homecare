@@ -43,6 +43,9 @@ const Footer = () => {
                         <Link href="mailto:dreamcarehomes@yahoo.com">
                           dreamcarehomes@yahoo.com
                         </Link>
+                        <Link href="mailto:dreamcarehomes17@gmail.com">
+                          dreamcarehomes17@gmail.com
+                        </Link>
                       </div>
                     </div>
                   </div>
