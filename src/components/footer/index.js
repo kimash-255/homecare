@@ -264,7 +264,7 @@ const Footer = () => {
           <div className="inner-container">
             <div className="copyright-text">
               © Copyright {currentYear} by Dream Care Homes LLC. Designed by{" "}
-              <Link href="https://msladesigns.com">Msladesigns</Link>
+              <Link href="https://mslabdesigns.com">Mslabdesigns</Link>
             </div>
           </div>
         </div>
