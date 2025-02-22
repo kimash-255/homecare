@@ -125,7 +125,7 @@ const ContactUs = () => {
                     </div>
                     <div className="text">
                       <h6 className="mb-1">Have any question?</h6>
-                      <a href="tel:971-460-9993">
+                      <a href="tel:9714609993">
                         <span>Free</span> : 971-460-9993
                       </a>
                     </div>
