@@ -48,7 +48,7 @@ const Header = () => {
                 </li>
                 <li>
                   <i className="fa fa-headset"></i> CALL US:{" "}
-                  <a href="tel:+12059608084">971-460-9993</a>
+                  <a href="tel:9714609993">971-460-9993</a>
                 </li>
               </ul>
             </div>
